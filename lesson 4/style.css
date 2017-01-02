@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+}
+div#menu {
+    margin-top: 15px;
+    height: 40px;
+    background-color: #bc62ff;
+    box-shadow:0 0 8px rgba(8, 40, 70, 0.55);
+}
+div#nav {
+    margin: auto;
+    width: 900px;
+    display: table;
+}
+div#nav a {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-family: Economica;
+    font-size: 20px;
+    font-weight:bold;
+    color: white;
+    text-decoration: none;
+    display: table-cell;
+    min-width: 60px;
+}
+div#nav a:hover {
+    color: #a6a6a6;
+    background-color: #e8e8e8;
+}
+div#nav2 {
+    width: 900px;
+    margin: 0 auto;
+}
+div#nav2 a {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-family: Economica;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    min-width: 60px;
+    margin: 0 20px;
+}
+div#nav2 a:hover {
+    color: #a6a6a6;
+    background-color: #e8e8e8;
+}
+.float_left {
+    float: left;
+}
+.float_right {
+    float: right;
+    margin: 0 5% 0 0;
+}
+div#menu {
+    margin-top: 15px;
+    height: 40px;
+    background-color: #bc62ff;
+    box-shadow:0 0 8px rgba(8, 40, 70, 0.55);
+}
+div#menu a {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-family: Economica;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    min-width: 60px;
+}
+div#menu a:hover {
+    color: #a6a6a6;
+    background-color: #e8e8e8;
+}
+div#nav1_1{
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+}
+div.inline {
+    vertical-align: middle;
+    line-height: 40px;
+    font-family: Economica;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 35px;
+}
+div.inline:hover {
+    color: #a6a6a6;
+    background-color: #e8e8e8;
+}
+div#nav2_1{
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+}
+div#nav2_1 div.inline2 {
+    vertical-align: middle;
+    line-height: 40px;
+    font-family: Economica;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 35px;
+    float: left;
+}
+div.inline2:hover {
+    color: #a6a6a6;
+    background-color: #e8e8e8;
+}
+div#menu div.inline2_1 {
+    vertical-align: middle;
+    line-height: 40px;
+    font-family: Economica;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-right: 10%;
+    padding: 0 35px;
+}
+div.inline2_1:hover {
+    color: #a6a6a6;
+    background-color: #f8f8f8;
+}
+div#pager{
+    margin: 15px 25%;
+    width:auto;
+    height: auto;
+}
+div#list {
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+}
+input.page {
+    display: none;
+}
+input.page + label {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    border: solid 1px #a73cff;
+    border-radius: 4px;
+    margin: 0 20px 0 0;
+    color: #a73cff;
+    font-family: Economica;
+    font-weight: bold;
+    transition: background-color .5s;
+}
+input.page +label:hover {
+    background-color: #a73cff;
+    color: white;
+    border: solid 1px #a73cff;
+    transition: background-color .5s;
+}
+input.page:checked + label {
+    background-color: #a73cff;
+    color: white;
+    border: solid 1px #a73cff;
+    transition: background-color .5s;
+}
+div#first{
+    color: #a73cff;
+    display: inline-block;
+    font-family: Economica;
+    font-weight: bold;
+    margin: 0 20px 0 0;
+    vertical-align: middle;
+}
+div#first:hover{
+    color: coral;
+}
+div#prev{
+    color: #a73cff;
+    display: inline-block;
+    font-family: Economica;
+    font-weight: bold;
+    margin: 0 20px 0 0;
+    vertical-align: middle;
+}
+div#prev:hover{
+    color: coral;
+}
+div#next{
+    color: #a73cff;
+    display: inline-block;
+    font-family: Economica;
+    font-weight: bold;
+    vertical-align: middle;
+}
+div#next:hover{
+    color: coral;
+}
+div#last{
+    color: #a73cff;
+    display: inline-block;
+    font-family: Economica;
+    font-weight: bold;
+    margin: 0 0 0 20px;
+    vertical-align: middle;
+}
+div#last:hover{
+    color: coral;
+}
+ul#parent li:nth-of-type(1n -8){
+    background-color: #a73cff;
+}
+li.child{
+    display: inline-block;
+}
+input#e0, input#e1 +label, input#e2 +label, input#e3 +label, input#e4 +label,
+input#e5 +label, input#e6 +label, input#e7 +label, input#e8 +label, input#e9 +label {
+    visibility: hidden;
+}
+input#e0, input#e1, input#e2, input#e3, input#e4,
+input#e5, input#e6, input#e7, input#e8, input#e9 {
+    display: none;
+}
+input#e0{
+    display: none;
+}
+input#e0:checked + input#e1+label{
+    visibility: visible;
+}
+input#e1:checked +label + input#e2+label{
+    visibility: visible;
+}
+input#e2:checked +label + input#e3+label{
+    visibility: visible;
+}
+input#e3:checked +label + input#e4+label{
+    visibility: visible;
+}
+input#e4:checked +label + input#e5+label{
+    visibility: visible;
+}
+input#e5:checked +label + input#e6+label{
+    visibility: visible;
+}
+input#e6:checked +label + input#e7+label{
+    visibility: visible;
+}
+input#e7:checked +label + input#e8+label{
+    visibility: visible;
+}
+input#e8:checked +label + input#e9+label{
+    visibility: visible;
+}
+input#e9:checked +label + input#e1{
+    visibility: visible;
+}
+input[name="1"] + label {
+    height: 20px;
+    width: 20px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 0 30px;
+}
