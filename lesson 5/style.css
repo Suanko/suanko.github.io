@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+}
+div#menu{
+    text-align: center;
+    margin: 15px 0 0 0;
+    width: 100%;
+    background-color: #26aaff;
+}
+div#nav {
+    margin: 0 auto;
+    display: table;
+    width: 900px;
+    height: 40px;
+    position: relative;
+}
+div.nav {
+    display: table-cell;
+    line-height: inherit;
+    vertical-align: middle;
+    color:white;
+    font-family: Impact;
+    font-size: 14px;
+    min-width: 40px;
+    padding:0 15px;
+}
+div.nav:hover{
+    background-color: aliceblue;
+    color: #9f9f9f;
+}
+div.nav:hover div.nav2{
+    display: table;
+}
+div.menu2{
+    display: table;
+    text-align: center;
+    background-color: aliceblue;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+div.subnav {
+    display: table-cell;
+    line-height: inherit;
+    vertical-align: middle;
+    color: #9f9f9f;
+    font-family: Impact;
+    min-width: 40px;
+    padding:0 15px;
+    font-size: 14px;
+}
+div.nav2{
+    display: none;
+    margin: 0 auto;
+    width: 900px;
+    height: 35px;
+}
+
+div.subnav:hover{
+    background-color: #26aaff;
+    color: white;
+}
+/*task2*/
+div#main{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border: solid 5px #ef752f;
+    border-radius: 5px;
+    width: 300px;
+    height: 480px;
+    font-family: Economica;
+    box-shadow: 0 0 3px;
+}
+div#top{
+    height: 90px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Economica;
+    background-color: #ef752f;
+}
+div#table{
+    margin: 15px auto;
+    display: block;
+    height: 260px;
+    width: 90%;
+    text-align: center;
+}
+div.table1 {
+    background-color: rgba(53, 157, 255, 0.25);
+}
+div.table2 {
+    background-color: rgba(227, 227, 227, 0.6);
+}
+div.arrow {
+    display: block;
+    line-height: 32px;
+    font-size: 16px;
+    border-bottom: solid 1px white;
+    text-align: left;
+    padding: 0 50px;
+}
+div.arrow img{
+    margin-right:10px ;
+}
+div#caption{
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+div#theader{
+    display: block;
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+div#theader sup{
+    vertical-align: top;
+    font-size: 25px;
+}
+div#theader sub{
+    vertical-align: bottom;
+    font-size: 25px;
+}
+div#button{
+    width: 90%;
+    border-radius: 5px;
+    border-bottom: solid 3px #b65b28;
+    border-left: solid 1px #b65b28;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #ef752f;
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+}
