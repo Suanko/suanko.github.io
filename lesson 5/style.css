@@ -68,12 +68,12 @@ div#main{
     bottom: 0;
     left: 0;
     margin: auto;
-    border: solid 5px #ef752f;
+    border: solid 3px #ef752f;
     border-radius: 5px;
-    width: 300px;
+    width: 290px;
     height: 480px;
-    font-family: Economica;
-    box-shadow: 0 0 3px;
+    font-family: Trebuchet MS;
+    box-shadow: 0 0 9px ;
 }
 div#top{
     height: 90px;
@@ -81,9 +81,8 @@ div#top{
     vertical-align: middle;
     line-height: 90px;
     color: white;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
-    font-family: Economica;
     background-color: #ef752f;
 }
 div#table{
@@ -105,14 +104,15 @@ div.arrow {
     font-size: 16px;
     border-bottom: solid 1px white;
     text-align: left;
-    padding: 0 50px;
+    padding: 0 30px;
+    color: #9f9f9f;
 }
 div.arrow img{
-    margin-right:10px ;
+    margin-right:15px ;
 }
 div#caption{
     display: block;
-    font-size: 30px;
+    font-size: 26px;
     margin-bottom: 10px;
 }
 div#theader{
@@ -127,18 +127,18 @@ div#theader sup{
 }
 div#theader sub{
     vertical-align: bottom;
-    font-size: 25px;
+    font-size: 18px;
 }
 div#button{
-    width: 90%;
+    width: 88%;
     border-radius: 5px;
     border-bottom: solid 3px #b65b28;
     border-left: solid 1px #b65b28;
     line-height: 40px;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
     background-color: #ef752f;
-    margin: 40px auto;
+    margin: 30px auto;
     text-align: center;
     color: white;
 }
