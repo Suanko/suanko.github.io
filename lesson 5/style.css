@@ -63,15 +63,13 @@ div.subnav:hover{
 /*task2*/
 div#main{
     position: absolute;
-    top: 0;
+    top: 300px;
     right: 0;
-    bottom: 0;
     left: 0;
     margin: auto;
     border: solid 3px #ef752f;
     border-radius: 5px;
     width: 290px;
-    height: 480px;
     font-family: Trebuchet MS;
     box-shadow: 0 0 9px ;
 }
