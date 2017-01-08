@@ -102,20 +102,14 @@ div#button_name:hover{
 /*second*/
 div#second{
     height:565px;
-    text-align: center;
     min-width: 1400px;
 }
-div.circle_block{
-    display: inline-block;
-    margin: 80px 110px 0;
+div#sec_size{
+    text-align: center;
 }
 div.circle_block{
     display: inline-block;
-    margin: 80px 110px 0;
-}
-div.circle_block{
-    display: inline-block;
-    margin: 80px 110px 0;
+    margin: 80px 55px 0 55px;
 }
 div.circle{
     height: 150px;
@@ -140,7 +134,7 @@ div#circle3{
 }
 h2.h2_item{
     color:#3070a8;
-    font-size: 30px;
+    font-size: 1.5em;
     text-align: center;
     font-weight: 100;
     font-family: Calibri;
