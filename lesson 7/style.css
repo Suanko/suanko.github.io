@@ -456,6 +456,7 @@ div#client_comments{
     background: url("Layer.jpg")repeat-x;
     font-family: Trebuchet MS;
     height: 315px;
+    min-width: 1400px;
 }
 div#paranja2{
     background-color: rgba(18, 23, 28, .8);
