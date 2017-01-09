@@ -150,8 +150,7 @@ div#middle{
     min-width: 1400px;
     font-family: Calibri;
     background: url("ppl.jpg") no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
+    background-size: 100% auto;
 }
 div#paranja3{
     background-color: rgba(18, 23, 28, .8);
