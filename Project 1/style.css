@@ -646,6 +646,7 @@ div#footer{
     height: 105px;
     background: #3070a8;
     text-align: center;
+    min-width: 1400px;
 }
 p.p_footer{
     color: white;
