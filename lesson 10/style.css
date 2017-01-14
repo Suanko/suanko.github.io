@@ -20,7 +20,7 @@ div#main>p{
     margin: 10px 0 50px;
 }
 div#slider{
-    max-width: 1146px;
+    max-width: 1170px;
     margin: auto;
     position: relative;
     padding: 0;
@@ -39,36 +39,26 @@ div.photo:hover>div.opacity{
 div#photo1{
     background: url("images/pick1.gif");
     background-size: cover;
-    margin-top: 5px;
-    margin-left: 0;
 }
 div#photo2{
     background: url("images/pick2.gif");
     background-size: cover;
-    margin-top: 5px;
 }
 div#photo3{
     background: url("images/pick3.gif");
     background-size: cover;
-    margin-top: 5px;
-    margin-right: 0;
 }
 div#photo4{
     background: url("images/pick4.gif");
     background-size: cover;
-    margin-bottom: 5px;
-    margin-left: 0;
 }
 div#photo5{
     background: url("images/pick5.gif");
     background-size: cover;
-    margin-bottom: 5px;
 }
 div#photo6{
     background: url("images/pick6.gif");
     background-size: cover;
-    margin-bottom: 5px;
-    margin-right: 0;
 }
 div.opacity{
     height: 100%;
@@ -147,10 +137,11 @@ input[name="zoom6"]:checked + label+div#zoomed6{
 }
 div.zoomed{
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    box-sizing: border-box;
     border: solid 3px #999;
     border-radius: 3px;
     box-shadow: 0 0 10px black;
