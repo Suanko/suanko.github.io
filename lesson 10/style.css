@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #f6f9f9;
+}
+div#main{
+    background: #f6f9f9;
+    font-family: Lato;
+    text-align: center;
+    padding-top: 50px;
+}
+div#main>h1{
+    color: #2d394f;
+    font-size:34px;
+    font-weight: 100;
+    margin: 0;
+}
+div#main>p{
+    color: #909090;
+    margin: 10px 0 50px;
+}
+div#slider{
+    max-width: 1146px;
+    margin: auto;
+    position: relative;
+    padding: 0;
+    font-size: 0px;
+}
+div.photo{
+    width: 360px;
+    height:260px;
+    display: inline-block;
+    border-radius: 2px;
+    margin: 15px;
+}
+div.photo:hover>div.opacity{
+    visibility: visible;
+}
+div#photo1{
+    background: url("images/pick1.gif");
+    background-size: cover;
+    margin-top: 5px;
+    margin-left: 0;
+}
+div#photo2{
+    background: url("images/pick2.gif");
+    background-size: cover;
+    margin-top: 5px;
+}
+div#photo3{
+    background: url("images/pick3.gif");
+    background-size: cover;
+    margin-top: 5px;
+    margin-right: 0;
+}
+div#photo4{
+    background: url("images/pick4.gif");
+    background-size: cover;
+    margin-bottom: 5px;
+    margin-left: 0;
+}
+div#photo5{
+    background: url("images/pick5.gif");
+    background-size: cover;
+    margin-bottom: 5px;
+}
+div#photo6{
+    background: url("images/pick6.gif");
+    background-size: cover;
+    margin-bottom: 5px;
+    margin-right: 0;
+}
+div.opacity{
+    height: 100%;
+    width:100%;
+    line-height:260px;
+}
+div.opacity:hover{
+    background: rgba(41, 155, 231, .7);
+}
+div.opacity label{
+    visibility: hidden;
+}
+div.opacity:hover label{
+    visibility: visible;
+}
+div.chain{
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-left: 5px;
+}
+div.chain>label{
+    background: url("images/chain.gif") center no-repeat;
+    border-radius: 3px;
+    border: solid 1px white;
+    box-sizing: border-box;
+    line-height: 40px;
+}
+div.zoom{
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-right: 5px;
+}
+div.zoom>label{
+    background: url("images/zoom.gif") center no-repeat;
+    border-radius: 3px;
+    border: solid 1px white;
+    box-sizing: border-box;
+    line-height: 40px;
+}
+div.chain:hover{
+    background: url("images/chain.gif") center no-repeat rgb(41, 155, 231);
+}
+div.zoom:hover{
+    background: url("images/zoom.gif") center no-repeat rgb(41, 155, 231);
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"] + label{
+    height:40px;
+    width: 40px;
+    display: block;
+    cursor: pointer;
+}
+input[name="zoom1"]:checked + label+div#zoomed1{
+    display: block;
+}
+input[name="zoom2"]:checked + label+div#zoomed2{
+    display: block;
+}
+input[name="zoom3"]:checked + label+div#zoomed3{
+    display: block;
+}
+input[name="zoom4"]:checked + label+div#zoomed4{
+    display: block;
+}
+input[name="zoom5"]:checked + label+div#zoomed5{
+    display: block;
+}
+input[name="zoom6"]:checked + label+div#zoomed6{
+    display: block;
+}
+div.zoomed{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: solid 3px #999;
+    border-radius: 3px;
+    box-shadow: 0 0 10px black;
+}
+div#zoomed1{
+    background: url("images/pick1.gif") no-repeat center;
+    background-size: cover;
+    display: none;
+}
+div#zoomed2{
+    background: url("images/pick2.gif") no-repeat center;
+    background-size: cover;
+    display: none;
+}
+div#zoomed3{
+    background: url("images/pick3.gif") no-repeat center;
+    background-size: cover;
+    display: none;
+}
+div#zoomed4{
+    background: url("images/pick4.gif") no-repeat center;
+    background-size: cover;
+    display: none;
+}
+div#zoomed5{
+    background: url("images/pick5.gif") no-repeat center;
+    background-size: cover;
+    display: none;
+}
+div#zoomed6{
+    background: url("images/pick6.gif") no-repeat center;
+    background-size: cover;
+    display: none;
+}
+label.cross{
+    font-family: Calibri;
+    background: #25a6f7;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    line-height:40px;
+    vertical-align: middle;
+}
+label.cross:hover{
+    background: #f74c26;
+}
