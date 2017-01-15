@@ -117,30 +117,36 @@ input[type="radio"] + label{
     display: block;
     cursor: pointer;
 }
-input[name="zoom1"]:checked + label+div#zoomed1{
+input[name="zoom1"]:checked + label+div.paranja{
     display: block;
 }
-input[name="zoom2"]:checked + label+div#zoomed2{
+input[name="zoom2"]:checked + label+div.paranja{
     display: block;
 }
-input[name="zoom3"]:checked + label+div#zoomed3{
+input[name="zoom3"]:checked + label+div.paranja{
     display: block;
 }
-input[name="zoom4"]:checked + label+div#zoomed4{
+input[name="zoom4"]:checked + label+div.paranja{
     display: block;
 }
-input[name="zoom5"]:checked + label+div#zoomed5{
+input[name="zoom5"]:checked + label+div.paranja{
     display: block;
 }
-input[name="zoom6"]:checked + label+div#zoomed6{
+input[name="zoom6"]:checked + label+div.paranja{
     display: block;
 }
-div.zoomed{
+div.paranja{
+    display: none;
     position: absolute;
     top: 15px;
     right: 15px;
     bottom: 15px;
     left: 15px;
+}
+div.zoomed{
+    position: relative;
+    width: 100%;
+    height:100%;
     box-sizing: border-box;
     border: solid 3px #999;
     border-radius: 3px;
@@ -149,32 +155,26 @@ div.zoomed{
 div#zoomed1{
     background: url("images/pick1.gif") no-repeat center;
     background-size: cover;
-    display: none;
 }
 div#zoomed2{
     background: url("images/pick2.gif") no-repeat center;
     background-size: cover;
-    display: none;
 }
 div#zoomed3{
     background: url("images/pick3.gif") no-repeat center;
     background-size: cover;
-    display: none;
 }
 div#zoomed4{
     background: url("images/pick4.gif") no-repeat center;
     background-size: cover;
-    display: none;
 }
 div#zoomed5{
     background: url("images/pick5.gif") no-repeat center;
     background-size: cover;
-    display: none;
 }
 div#zoomed6{
     background: url("images/pick6.gif") no-repeat center;
     background-size: cover;
-    display: none;
 }
 label.cross{
     font-family: Calibri;
@@ -190,4 +190,12 @@ label.cross{
 }
 label.cross:hover{
     background: #f74c26;
+}
+div.cassa{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(132, 132, 132, 0.7);
 }
