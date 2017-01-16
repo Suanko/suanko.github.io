@@ -269,7 +269,6 @@ label#hero2:hover{
 .heroes_letter{
     position: absolute;
     right: 70px;
-    padding-left: 40px;
     display: inline-block;
     text-align: right;
     border-bottom: solid 1px #ddd;
@@ -297,7 +296,7 @@ label#hero2:hover{
     color: #afceb4;
     font-size: 10px;
     position: absolute;
-    right: 100px;
+    right: 90px;
     bottom: 80px;
     text-transform: uppercase;
 }
