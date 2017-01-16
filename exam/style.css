@@ -160,7 +160,6 @@ label#hero1{
     border-radius: 3px;
     cursor: pointer;
 }
-
 label#skala1{
     position: absolute;
     bottom: 5px;
@@ -173,7 +172,11 @@ label#skala1{
     border-radius: 3px;
     cursor: pointer;
 }
-label[for="hero"]:hover{
+label#skala1:hover{
+    background: url("images/left.gif") no-repeat center, #fff;
+    opacity: 1;
+}
+label#hero1:hover{
     background: url("images/left.gif") no-repeat center, #fff;
     opacity: 1;
 }
@@ -201,7 +204,11 @@ label#hero2{
     border-radius: 3px;
     cursor: pointer;
 }
-label[for="skala"]:hover{
+label#skala2:hover{
+    background: url("images/right.gif") no-repeat center, #fff;
+    opacity: 1;
+}
+label#hero2:hover{
     background: url("images/right.gif") no-repeat center, #fff;
     opacity: 1;
 }
