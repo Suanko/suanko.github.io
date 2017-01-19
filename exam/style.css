@@ -88,6 +88,9 @@ body{
     box-shadow: 0 0 1px #999;
     z-index: 5;
 }
+.hover_home:hover{
+    color: #ffad19;
+}
 .li_sub-list{
     display: block;
     height:33px;
@@ -297,9 +300,15 @@ label#hero2:hover{
     right: 70px;
     display: inline-block;
     text-align: right;
-    border-bottom: solid 1px #ddd;
     z-index: 3;
-    box-sizing: border-box;
+    font-weight: normal;
+}
+.heroes_letter  hr{
+    margin: 0;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .heroes_content{
     padding: 60px 0 60px 0;
@@ -312,6 +321,7 @@ label#hero2:hover{
     letter-spacing: 1px;
     color: #515151;
     margin: 5px 0;
+    font-weight: normal;
 }
 .heroes_letter p{
     font-size: 14px;
@@ -386,21 +396,26 @@ label#hero2:hover{
     margin-bottom: 27px;
     font-size: 18px;
     color: #222;
+    font-weight:normal;
 }
 .undiscovered_block{
     border: solid 1px #ddd;
     background: #f0f0f0;
     position: relative;
-    padding-bottom: 12px;
+    padding-bottom: 5px;
 }
 .undiscovered_cc{
     display: inline-block;
     width: 303px;
+    vertical-align: top;
 }
 .undiscovered_cc p{
     font-size: 12px;
     text-align: left;
     color: #666;
+    width:285px;
+    margin-left:  9px;
+    margin-right:9px;
 }
 .undiscovered_photo{
     height: 142px;
@@ -530,6 +545,7 @@ label#hero2:hover{
     margin-bottom: 27px;
     font-size: 18px;
     color: #222;
+    font-weight:normal;
 }
 .tabbb{
     display: none;
