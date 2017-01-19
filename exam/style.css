@@ -711,6 +711,7 @@ label#hero2:hover{
 }
 .foo_list3 li{
     padding:10px 0 10px 30px;
+    font-size: 12px;
 }
 .foo_list3 li> span{
     font-size: 11px;
