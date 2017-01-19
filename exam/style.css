@@ -27,7 +27,7 @@ body{
 }
 #main:after{
     position: absolute;
-    top: 7px;
+    top: 8px;
     left: -1px;
     right: -1px;
     z-index: -9;
@@ -612,6 +612,7 @@ label#hero2:hover{
 .tabbbs input:checked + label{
     background: #fff;
     height:50px;
+    color: #000;
 }
 .vision{
     display: inline-block;
@@ -685,10 +686,18 @@ label#hero2:hover{
     text-align-last: left;
     vertical-align: top;
 }
+.tabbbs li:hover{
+    cursor: pointer;
+    color: #ffad19;
+}
 .footer_list li{
     color: #666;
     font-weight:normal;
     padding:5px 0;
+}
+.footer_list li:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 .footer_list hr{
     margin: 0;
