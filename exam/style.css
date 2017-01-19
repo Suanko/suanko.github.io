@@ -1,3 +1,6 @@
+html{
+    font-size: 1px;
+}
 body{
     margin: 0;
     padding: 0;
@@ -43,14 +46,14 @@ body{
 }
 #logo h1{
     font-family: 'Oleo Script', cursive;
-    font-size: 40px;
+    font-size: 40rem;
     margin: 0 0 0 10px;
     line-height:1em;
 }
 #logo p{
     line-height:1.5em;
     margin: 0 0 0 15px;
-    font-size: 11px;
+    font-size: 11rem;
     color: #999;
 }
 #nav{
@@ -66,7 +69,7 @@ body{
 .li_main-list{
     display: inline-block;
     margin: 50px 30px 0;
-    font-size: 14px;
+    font-size: 14rem;
     color: #6c6c6c;
     position: relative;
 }
@@ -107,7 +110,7 @@ body{
 .li_sub-list p:after{
     content: "this text complimentary";
     color: #bebebe;
-    font-size: 10px;
+    font-size: 10rem;
     margin: 0;
     display: none;
     position: absolute;
@@ -119,7 +122,7 @@ body{
 }
 .li_sub-list p{
     color:black;
-    font-size:12px;
+    font-size:12rem;
     margin: 0;
 }
 .nav_sub_list hr{
@@ -154,7 +157,7 @@ div.cube{
     top: 40px;
     text-shadow: 0 -1px 1px #ddd;
     box-shadow: 0 0 1px #ddd;
-    font-size: 14px;
+    font-size: 14rem;
     cursor: pointer;
 }
 #button:hover{
@@ -277,7 +280,7 @@ label#hero2:hover{
     background: rgb(0,0,0);
     opacity: .6;
     border-radius: 3px;
-    font-size: 11px;
+    font-size: 11rem;
     color: #ffc14c;
 }
 .heroes_block_cc:hover{
@@ -290,7 +293,7 @@ label#hero2:hover{
 }
 .heroes_block_cc p:first-line{
     color: white;
-    font-size: 13px;
+    font-size: 13rem;
 }
 .heroes_block_cc p>span{
     color: #545454;
@@ -318,24 +321,23 @@ label#hero2:hover{
     box-shadow: 0px 5px 5px -7px rgba(0,0,0,0.4);
 }
 .heroes_letter h1{
-    font-size: 38px;
+    font-size: 38rem;
     letter-spacing: 1px;
     color: #515151;
     margin: 5px 0;
     font-weight: normal;
 }
 .heroes_letter p{
-    font-size: 14px;
+    font-size: 14rem;
     color: #666;
     margin: 0 0 10px 0;
 }
-.click{
+p.click{
+    display: inline-block;
     color: #afceb4;
-    font-size: 10px;
-    position: absolute;
-    right: 90px;
-    bottom: 80px;
+    font-size: 10rem;
     text-transform: uppercase;
+    margin: 60px 30px 0 0;
 }
 .click span{
     text-decoration: underline;
@@ -364,14 +366,14 @@ label#hero2:hover{
 .button720 p:first-line{
     text-shadow: 0 -1px 1px #ddd;
     color: #fff;
-    font-size: 17px;
+    font-size: 17rem;
     font-weight: normal;
     letter-spacing: 1px;
 }
 .button720 p{
     display: inline-block;
     width: 126px;
-    font-size: 10px;
+    font-size: 10rem;
     font-weight: 700;
     color: transparent;
     margin: 5px 0 0 7px;
@@ -395,7 +397,7 @@ label#hero2:hover{
 .undiscovered_content h1{
     display: block;
     margin-bottom: 27px;
-    font-size: 18px;
+    font-size: 18rem;
     color: #222;
     font-weight:normal;
 }
@@ -411,7 +413,7 @@ label#hero2:hover{
     vertical-align: top;
 }
 .undiscovered_cc p{
-    font-size: 12px;
+    font-size: 12rem;
     text-align: left;
     color: #666;
     width:285px;
@@ -425,13 +427,13 @@ label#hero2:hover{
     margin: auto;
 }
 .undiscovered_block h2{
-    font-size: 14px;
+    font-size: 14rem;
     color: #666;
     margin:5px 0 0 5px;
     text-align: left;
 }
 .undiscovered_block p{
-    font-size: 11px;
+    font-size: 11rem;
     color: #999;
     margin:4px 0 0 5px;
     text-align: left;
@@ -478,24 +480,10 @@ label#hero2:hover{
 .container:before {
     background:
             linear-gradient( to bottom, transparent 28%, #fff 28%),
-            linear-gradient(
-                    45deg, transparent 64%, #ddd 64%,
-                    #ddd 67%, transparent 67%
-            ),
-            linear-gradient(
-                    -45deg, transparent 64%, #ddd 64%,
-                    #ddd 67%, transparent 67%
-            ),
-            linear-gradient(
-                    45deg, transparent 33.333%,
-                    #fff 33.333%, #fff 66.667%,
-                    transparent 66.667%
-            ),
-            linear-gradient(
-                    -45deg, #f0f0f0 33.333%,
-                    #fff 33.333%, #fff 66.667%,
-                    #f0f0f0 66.667%
-            );
+            linear-gradient(45deg, transparent 64%, #ddd 64%, #ddd 67%, transparent 67%),
+            linear-gradient(-45deg, transparent 64%, #ddd 64%, #ddd 67%, transparent 67%),
+            linear-gradient(45deg, transparent 33.333%, #fff 33.333%, #fff 66.667%, transparent 66.667%),
+            linear-gradient(-45deg, #f0f0f0 33.333%, #fff 33.333%, #fff 66.667%, #f0f0f0 66.667%);
     background-size: 10px 20px;
 }
 .undiscovered_buttons{
@@ -544,7 +532,7 @@ label#hero2:hover{
 .tabbbs_content h1{
     display: block;
     margin-bottom: 27px;
-    font-size: 18px;
+    font-size: 18rem;
     color: #222;
     font-weight:normal;
 }
@@ -562,7 +550,7 @@ label#hero2:hover{
     padding: 0 20px 10px;
 }
 .tabbbs h2{
-    font-size: 14px;
+    font-size: 14rem;
     color: #333;
     line-height:normal;
     margin: 20px 0 5px;
@@ -575,7 +563,7 @@ label#hero2:hover{
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .tabbb ul{
-    font-size: 12px;
+    font-size: 12rem;
     color:#333;
     list-style: none;
     display: inline-block;
@@ -589,7 +577,7 @@ label#hero2:hover{
     color: #d8d8d8;
     font-weight: 900;
     margin-right: 15px;
-    font-size:16px;
+    font-size:16rem;
 }
 .tabbbs{
     background: linear-gradient(to top, #f8f8f8, #fdfdfd);
@@ -609,7 +597,7 @@ label#hero2:hover{
     display: inline-block;
     border-right: solid 1px #ececec;
     color: #999;
-    font-size:14px;
+    font-size:14rem;
     padding: 0 10px;
     width: 93px;
     text-align: center;
@@ -634,10 +622,11 @@ label#hero2:hover{
 }
 .vision{
     display: inline-block;
+    padding-left: 140px;
 }
 .view{
     display: inline-block;
-    font-size: 12px;
+    font-size: 12rem;
     line-height:normal;
 }
 .tabbbs_photo1{
@@ -685,15 +674,12 @@ label#hero2:hover{
     display: inline-block;
     vertical-align: top;
 }
-.vision{
-    padding-left: 150px;
-}
 .view_right{
     margin-left: 19px;
 }
 .footer_zone{
     text-align-last: justify;
-    font-size: 12px;
+    font-size: 12rem;
 }
 .footer_list{
     padding: 0;
@@ -729,10 +715,10 @@ label#hero2:hover{
 }
 .foo_list3 li{
     padding:10px 0 10px 30px;
-    font-size: 12px;
+    font-size: 12rem;
 }
 .foo_list3 li> span{
-    font-size: 11px;
+    font-size: 11rem;
     color: #aaa;
 }
 .foo_list3 li:before{
