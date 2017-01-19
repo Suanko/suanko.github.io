@@ -359,6 +359,7 @@ p.click{
     right: 70px;
     top: 170px;
     cursor: pointer;
+    z-index: 5;
 }
 .button720:hover{
     box-shadow: 0 0 5px #ddd;
