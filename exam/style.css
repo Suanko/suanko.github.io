@@ -302,6 +302,7 @@ label#hero2:hover{
     text-align: right;
     z-index: 3;
     font-weight: normal;
+    width:451px;
 }
 .heroes_letter  hr{
     margin: 0;
@@ -691,10 +692,10 @@ label#hero2:hover{
 }
 .footer_zone{
     text-align-last: justify;
+    font-size: 12px;
 }
 .footer_list{
     padding: 0;
-    font-size: 12px;
     color: #ffad19;
     list-style: none;
     display: inline-block;
