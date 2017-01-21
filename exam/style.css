@@ -549,12 +549,14 @@ p.click{
     border-right: solid 1px #ececec;
     border-radius: 0 0 3px 3px;
     padding: 0 20px 10px;
+    text-align-last: justify;
 }
 .tabbbs h2{
     font-size: 14rem;
     color: #333;
     line-height:normal;
     margin: 20px 0 5px;
+    text-align-last: left;
 }
 .tabbbs hr{
     margin: 0;
@@ -569,6 +571,7 @@ p.click{
     list-style: none;
     display: inline-block;
     padding: 0 10px;
+    text-align-last: left;
 }
 .tabbb li{
     line-height: normal;
@@ -623,7 +626,6 @@ p.click{
 }
 .vision{
     display: inline-block;
-    padding-left: 140px;
 }
 .view{
     display: inline-block;
@@ -665,18 +667,17 @@ p.click{
 }
 .view h3{
     margin: 0;
+    text-align-last: left;
 }
 .view p{
     color:#999;
     margin: 0;
     width: 150px;
+    text-align-last: left;
 }
 .tabbbs_view_text{
     display: inline-block;
     vertical-align: top;
-}
-.view_right{
-    margin-left: 19px;
 }
 .footer_zone{
     text-align-last: justify;
