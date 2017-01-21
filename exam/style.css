@@ -386,14 +386,13 @@ p.click{
     background: url("images/shape_button.gif") no-repeat center;
     height: 19px;
     width: 12px;
-    margin: auto 0 auto 10px;
-    border: solid 1px #ffc55a;
-    padding-bottom: 10px;
+    padding: 0 20px 15px 0;
 }
 .undiscovered_content{
     display: block;
     padding-top: 27px;
     font-size:0;
+    text-align-last: justify;
 }
 .undiscovered_content h1{
     display: block;
@@ -401,6 +400,7 @@ p.click{
     font-size: 18rem;
     color: #222;
     font-weight:normal;
+    text-align-last: left;
 }
 .undiscovered_block{
     border: solid 1px #ddd;
@@ -410,8 +410,9 @@ p.click{
 }
 .undiscovered_cc{
     display: inline-block;
-    width: 303px;
+    width: 301px;
     vertical-align: top;
+    overflow: hidden;
 }
 .undiscovered_cc p{
     font-size: 12rem;
@@ -420,6 +421,7 @@ p.click{
     width:285px;
     margin-left:  9px;
     margin-right:9px;
+    text-align-last: left;
 }
 .undiscovered_photo{
     height: 142px;
@@ -432,15 +434,13 @@ p.click{
     color: #666;
     margin:5px 0 0 5px;
     text-align: left;
+    text-align-last: left;
 }
 .undiscovered_block p{
     font-size: 11rem;
     color: #999;
     margin:4px 0 0 5px;
-    text-align: left;
-}
-#undiscovered_block_cc{
-    padding: 0 11px;
+    text-align-last: left;
 }
 #photo1{
     background: url("images/cl-1-pick1.gif") no-repeat;
@@ -474,22 +474,22 @@ p.click{
     content: "";
     position: absolute;
     bottom: -10px;
-    left:0;
-    width: 100%;
+    left:-15px;
+    width:110%;
     height: 10px;
 }
 .container:before {
     background:
             linear-gradient( to bottom, transparent 28%, #fff 28%),
-            linear-gradient(45deg, transparent 64%, #ddd 64%, #ddd 67%, transparent 67%),
-            linear-gradient(-45deg, transparent 64%, #ddd 64%, #ddd 67%, transparent 67%),
+            linear-gradient(45deg, transparent 63.5%, #ddd 63.5%, #ddd 67%, transparent 67%),
+            linear-gradient(-45deg, transparent 63.5%, #ddd 63.5%, #ddd 67%, transparent 67%),
             linear-gradient(45deg, transparent 33.333%, #fff 33.333%, #fff 66.667%, transparent 66.667%),
             linear-gradient(-45deg, #f0f0f0 33.333%, #fff 33.333%, #fff 66.667%, #f0f0f0 66.667%);
-    background-size: 10px 20px;
+    background-size: 10px 19px;
 }
 .undiscovered_buttons{
     line-height: 142px;
-    text-align: center;
+    text-align-last: center;
 }
 .undiscovered_button{
     display: none;
@@ -541,8 +541,8 @@ p.click{
     display: none;
     position: absolute;
     width:892px;
-    left: -1px;
-    top:46px;
+    left: -0.9px;
+    top:45.7px;
     background: #fff;
     border-left: solid 1px #ececec;
     border-bottom: solid 1px #ececec;
@@ -678,10 +678,13 @@ p.click{
 .tabbbs_view_text{
     display: inline-block;
     vertical-align: top;
+    max-height:150px;
+    overflow: hidden;
 }
 .footer_zone{
     text-align-last: justify;
     font-size: 12rem;
+    padding-top: 20px;
 }
 .footer_list{
     padding: 0;
@@ -691,6 +694,8 @@ p.click{
     font-weight: 700;
     text-align-last: left;
     vertical-align: top;
+    width: 180px;
+    margin: 0;
 }
 .tabbbs li:hover{
     cursor: pointer;
@@ -714,6 +719,7 @@ p.click{
 }
 .foo_list3{
     position: relative;
+    width: 458px;
 }
 .foo_list3 li{
     padding:10px 0 10px 30px;
