@@ -184,7 +184,7 @@ label#hero1{
     left: 1px;
     display: inline-block;
     background: url("images/left.gif") no-repeat center;
-    opacity: .6;
+    opacity: .3;
     width: 32px;
     height: 49px;
     border-radius: 3px;
@@ -196,7 +196,7 @@ label#skala1{
     left: 1px;
     display: inline-block;
     background: url("images/left.gif") no-repeat center;
-    opacity: .6;
+    opacity: .3;
     width: 32px;
     height: 49px;
     border-radius: 3px;
@@ -216,7 +216,7 @@ label#skala2{
     right: 1px;
     display: inline-block;
     background: url("images/right.gif") no-repeat center;
-    opacity: .6;
+    opacity: .3;
     width: 32px;
     height: 49px;
     border-radius: 3px;
@@ -228,7 +228,7 @@ label#hero2{
     right: 1px;
     display: inline-block;
     background: url("images/right.gif") no-repeat center;
-    opacity: .6;
+    opacity: .3;
     width: 32px;
     height: 49px;
     border-radius: 3px;
@@ -278,7 +278,7 @@ label#hero2:hover{
     right: 35px;
     height: 49px;
     background: rgb(0,0,0);
-    opacity: .6;
+    opacity: .4;
     border-radius: 3px;
     font-size: 11rem;
     color: #ffc14c;
@@ -716,7 +716,7 @@ p.click{
     text-align-last: left;
     vertical-align: top;
     width: 180px;
-    margin: 0;
+    margin-bottom: 45px;
 }
 .tabbbs li:hover{
     cursor: pointer;
