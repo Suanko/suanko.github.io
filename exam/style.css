@@ -11,7 +11,7 @@ body{
     width: 932px;
     margin: 61px auto 82px;
     border-radius: 5px;
-    box-shadow: 0 0 3px #999;
+    box-shadow: 0 0 1px #999;
     background: #fff;
     position: relative;
     padding: 0 20px;
@@ -76,6 +76,14 @@ body{
 .li_main-list:hover{
     color:black;
     cursor: pointer;
+}
+.li_main-list a:hover{
+    color:#ffad19;
+    cursor: pointer;
+}
+.li_main-list a{
+    text-decoration: none;
+    color: #6c6c6c;
 }
 .li_main-list:hover ul{
     display: block;
@@ -789,4 +797,292 @@ p.click{
     transform: rotate(3deg);
     right: 10px;
     left: auto;
+}
+.foo_contact{
+    margin-right: 250px;
+}
+#main2{
+    width: 932px;
+    margin: 61px auto 0;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #999;
+    background: #fff;
+    position: relative;
+    padding: 0 20px;
+}
+.hrable{
+    padding-bottom: 20px;
+    border-bottom: solid 1px #ddd;
+    box-shadow: 0px 5px 5px -7px rgba(0,0,0,0.4);
+}
+.contact  hr {
+    margin: 0;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.contact h1{
+    color: #bbb;
+    font-size:20px;
+    font-weight:100;
+    display: block;
+}
+.contact h2{
+    color: #000;
+    font-size:18px;
+    margin: 0;
+    line-height:50px;
+    border-bottom: solid 1px #ddd;
+    width: 580px;
+    margin-bottom:20px;
+    position: relative;
+}
+div.cube2{
+    height: 5px;
+    width:5px;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom:-3.3px;
+    left: 50px;
+    border: solid 1px #ddd;
+    border-left: 0px;
+    border-top: 0px;
+    box-sizing: border-box;
+    background: linear-gradient( -45deg, white 60%, transparent 50%)
+}
+.contact_form {
+    border-top: solid 1px #ddd;
+    z-index: 2;
+    position: relative;
+    background: #fff;
+}
+.contact{
+    position: relative;
+}
+.contact:after {
+    z-index: 1;
+    position: absolute;
+    content: "";
+    top:40px;
+    left: 66px;
+    height: 1px;
+    width: 800px;
+    max-width: 800px;
+    background: #777;
+    box-shadow: 0 8px 30px #777;
+}
+.send{
+    width:600px;
+    border-right:solid 1px #ddd;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 485px;
+}
+.send input{
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    border-radius: 3px;
+    border:solid 1px #ddd;
+    box-shadow: inset 1px 2px 3px -2px #999999 ;
+    line-height: 20px;
+    outline: none;
+    box-sizing: border-box;
+}
+.send label {
+    font-size: 12px;
+    color: #444444;
+    display: inline-block;
+}
+.malinka{
+    display: none;
+    color: rgba(84, 0, 0, 0.6);
+    background: #ecb0b0;
+    font-size: 12rem;
+    position: absolute;
+    padding:0 10px;
+    margin: 0;
+    line-height: 24px;
+    border-radius: 3px;
+    left: 280px;
+}
+.form{
+    position: relative;
+    margin: 0 15px 20px 0;
+}
+#form1:focus ~ .circle {
+    display: inline-block;
+}
+#form2:focus ~ .malinka {
+    display: inline-block;
+}
+#form2:focus ~ .cube3 {
+    display: inline-block;
+}
+#form1:focus{
+    border:solid 1px #cae28b;
+    box-shadow: inset 1px 2px 3px -2px #cae28b ;
+}
+#form2:focus{
+    border:solid 1px #ecb0b0;
+    box-shadow: inset 1px 2px 3px -2px #ecb0b0 ;
+}
+#form4{
+    width: 475px;
+    height: 175px;
+    vertical-align: top;
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    border-radius: 3px;
+    border:solid 1px #ddd;
+    box-shadow: inset 1px 2px 3px -2px #999999 ;
+    outline: none;
+    box-sizing: border-box;
+    resize: none;
+    font-family: 'Oxygen', sans-serif;
+}
+.contact_info{
+    display: inline-block;
+    width: 289px;
+    margin: 20px 0 0 20px;
+    border: solid 1px #ddd;
+    border-radius: 3px;
+    padding: 0 10px 10px;
+    vertical-align: top;
+}
+.contact_info h3{
+    font-weight:700;
+    font-size:12rem;
+    color: #444;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+.contact_info p{
+    font-weight:100;
+    font-size:12rem;
+    color: #444;
+    margin: 5px 0;
+    text-align: justify;
+}
+.separator{
+    width:932px;
+    margin: 20px auto 0;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.footer_zone2{
+    width: 932px;
+    margin: 20px auto 82px;
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+    padding: 0 20px;
+    text-align-last: justify;
+    font-size: 12rem;
+    box-shadow: 0 0 1px #999;
+}
+.footer_zone2:before{
+    position: absolute;
+    top: 4px;
+    left: -1px;
+    right: -1px;
+    z-index: -8;
+    content: "";
+    background: #fff;
+    border-bottom: solid 1px #ececec;
+    border-radius: 5px;
+    height:100%;
+}
+.footer_zone2:after{
+    position: absolute;
+    top: 8px;
+    left: -1px;
+    right: -1px;
+    z-index: -9;
+    background: #fff;
+    border-bottom: solid 1px #ececec;
+    border-radius: 5px;
+    content: "";
+    height:100%;
+}
+.cube3{
+    display: none;
+    position: absolute;
+    left: 278px;
+    top:10px;
+    transform: rotate(45deg);
+    width: 5px;
+    height: 5px;
+    background: #ecb0b0;
+}
+.circle{
+    display: none;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: url("images/Shape_green.png") no-repeat, #cae28b;
+    background-position: center;
+    border-radius: 100%;
+    left: 280px;
+    top:6px;
+}
+.submit{
+    display: inline-block;
+    margin-top: 150px;
+    margin-left:100px;
+    background: #ffc551;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    border-radius: 3px;
+    text-shadow: 0 -1px 1px #ddd;
+    box-shadow: 0 0 1px #ddd;
+    font-size: 15rem;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.submit:hover{
+    box-shadow: 0 0 5px #ddd;
+}
+.footer_shadow:before{
+    z-index: -10;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    box-shadow: 0 25px 20px #777;
+    transform: rotate(-3deg);
+}
+.footer_shadow:after{
+    z-index: -10;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    box-shadow: 0 25px 20px #777;
+    transform: rotate(-3deg);
+}
+.footer_shadow:after{
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+.nav_sub_list a{
+    color: #000;
+}
+.nav_sub_list a:hover{
+    color: #000;
 }
