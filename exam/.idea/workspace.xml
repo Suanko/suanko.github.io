@@ -24,8 +24,8 @@
       <file leaf-file-name="exam.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exam.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="234" column="34" selection-start-line="234" selection-start-column="34" selection-end-line="234" selection-end-column="34" />
+            <state relative-caret-position="674">
+              <caret line="126" column="47" selection-start-line="126" selection-start-column="47" selection-end-line="126" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -34,8 +34,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5004">
-              <caret line="388" column="22" selection-start-line="388" selection-start-column="22" selection-end-line="388" selection-end-column="22" />
+            <state relative-caret-position="799">
+              <caret line="227" column="14" selection-start-line="227" selection-start-column="14" selection-end-line="227" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -179,12 +179,12 @@
       <updated>1484443279508</updated>
       <workItem from="1484443280625" duration="101861000" />
       <workItem from="1485034857422" duration="1135000" />
-      <workItem from="1485036323987" duration="3320000" />
+      <workItem from="1485036323987" duration="7332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106316000" />
+    <option name="totallyTimeSpent" value="110328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="969" height="1167" extended-state="0" />
@@ -276,16 +276,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exam.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="234" column="34" selection-start-line="234" selection-start-column="34" selection-end-line="234" selection-end-column="34" />
+        <state relative-caret-position="674">
+          <caret line="126" column="47" selection-start-line="126" selection-start-column="47" selection-end-line="126" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5004">
-          <caret line="388" column="22" selection-start-line="388" selection-start-column="22" selection-end-line="388" selection-end-column="22" />
+        <state relative-caret-position="799">
+          <caret line="227" column="14" selection-start-line="227" selection-start-column="14" selection-end-line="227" selection-end-column="14" />
           <folding />
         </state>
       </provider>

@@ -181,7 +181,7 @@ input#skala{
 label#hero1{
     position: absolute;
     bottom: 5px;
-    left: 0;
+    left: 1px;
     display: inline-block;
     background: url("images/left.gif") no-repeat center;
     opacity: .6;
@@ -193,7 +193,7 @@ label#hero1{
 label#skala1{
     position: absolute;
     bottom: 5px;
-    left: 0;
+    left: 1px;
     display: inline-block;
     background: url("images/left.gif") no-repeat center;
     opacity: .6;
@@ -213,7 +213,7 @@ label#hero1:hover{
 label#skala2{
     position: absolute;
     bottom: 5px;
-    right: 0;
+    right: 1px;
     display: inline-block;
     background: url("images/right.gif") no-repeat center;
     opacity: .6;
@@ -225,7 +225,7 @@ label#skala2{
 label#hero2{
     position: absolute;
     bottom: 5px;
-    right: 0;
+    right: 1px;
     display: inline-block;
     background: url("images/right.gif") no-repeat center;
     opacity: .6;
@@ -403,10 +403,15 @@ p.click{
     text-align-last: left;
 }
 .undiscovered_block{
-    border: solid 1px #ddd;
-    background: #f0f0f0;
     position: relative;
-    padding-bottom: 5px;
+    background: #f0f0f0;
+    padding-top: 1px;
+}
+.undiscovered_to-white{
+    background: #f0f0f0;
+    padding: 5px 5px 15px 5px;
+    border: solid 1px #f0f0f0;
+    border-top:none;
 }
 .undiscovered_cc{
     display: inline-block;
@@ -429,18 +434,33 @@ p.click{
     border: solid 2px #fff;
     margin: auto;
 }
+.undiscovered_photo:hover ~ .undiscovered_to-white{
+    background: #fff;
+}
+.undiscovered_photo:hover ~ .container:before{
+    background:
+            linear-gradient( to bottom, transparent 28%, #fff 28%),
+            linear-gradient(45deg, transparent 63.5%, #ddd 63.5%, #ddd 67%, transparent 67%),
+            linear-gradient(-45deg, transparent 63.5%, #ddd 63.5%, #ddd 67%, transparent 67%),
+            linear-gradient(45deg, transparent 33.333%, #fff 33.333%, #fff 66.667%, transparent 66.667%),
+            linear-gradient(-45deg, #fff 33.333%, #fff 33.333%, #fff 66.667%, #fff 66.667%);
+    background-size: 10px 19px;
+    background-position: -5px 0px;
+}
 .undiscovered_block h2{
     font-size: 14rem;
     color: #666;
-    margin:5px 0 0 5px;
     text-align: left;
     text-align-last: left;
+    margin: 0;
+    font-weight: 100;
 }
 .undiscovered_block p{
     font-size: 11rem;
     color: #999;
-    margin:4px 0 0 5px;
+    margin: 5px 0 0 0;
     text-align-last: left;
+    font-weight: 100;
 }
 #photo1{
     background: url("images/cl-1-pick1.gif") no-repeat;
@@ -473,19 +493,20 @@ p.click{
     display: inline-block;
     content: "";
     position: absolute;
-    bottom: -10px;
-    left:-15px;
-    width:110%;
+    bottom: -5px;
+    left:1px;
+    width:299px;
     height: 10px;
 }
 .container:before {
     background:
-            linear-gradient( to bottom, transparent 28%, #fff 28%),
+            linear-gradient(to bottom, transparent 26%, #fff 26%),
             linear-gradient(45deg, transparent 63.5%, #ddd 63.5%, #ddd 67%, transparent 67%),
             linear-gradient(-45deg, transparent 63.5%, #ddd 63.5%, #ddd 67%, transparent 67%),
             linear-gradient(45deg, transparent 33.333%, #fff 33.333%, #fff 66.667%, transparent 66.667%),
             linear-gradient(-45deg, #f0f0f0 33.333%, #fff 33.333%, #fff 66.667%, #f0f0f0 66.667%);
-    background-size: 10px 19px;
+    background-size: 10px 18px;
+    background-position: -5px 0px;
 }
 .undiscovered_buttons{
     line-height: 142px;
