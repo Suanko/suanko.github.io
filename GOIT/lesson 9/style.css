@@ -1,0 +1,73 @@
+/*task1*/
+body{
+    margin: 0;
+    padding: 0;
+}
+div#flex{
+    flex-direction: column;
+    min-width: 900px;
+    font-size: 22px;
+    padding: 100px;
+}
+div#flex_str1{
+    margin-bottom: 30px;
+    display: flex;
+    align-content: center;
+}
+div#flex_str2{
+    margin-bottom: 30px;
+    display: flex;
+    align-content: center;
+}
+div.flex_img{
+    background: url("http://lorempixel.com/output/abstract-q-g-85-85-7.jpg");
+    width: 85px;
+    height: 85px;
+    margin-right: 30px;
+    display: inline-block;
+    min-width: 85px;
+}
+div#flex_img2{
+    margin-left: 40px;
+}
+div#flex_img4{
+    margin-left: 40px;
+}
+div.flex_comment{
+    width: 500px;
+    display: inline-block;
+}
+div.flex_comment h1{
+    font-size: 1em;
+    color:#637f83;
+}
+div.flex_comment p{
+    font-size: 0.7em;
+    color:#dadada
+}
+div.flex_comment a{
+    color: #e4551d;
+    text-decoration: none;
+}
+div.flex_comment a:hover{
+    text-decoration: underline;
+}
+/*task2*/
+div.item{
+    display: inline-block;
+    width: 49%;
+}
+div.flex_img2{
+    background: url("http://lorempixel.com/output/abstract-q-g-85-85-7.jpg");
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    min-width: 85px;
+    margin-right: 30px;
+}
+div#flex_img22{
+    margin-left: 20px;
+}
+div#flex_img44{
+    margin-left: 20px;
+}
