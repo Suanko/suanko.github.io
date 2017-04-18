@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms</title>
+</head>
+<body>
+<form action="#" method="post" id="form_main">
+    <!--target="_blank" autocomplete="on"-->
+<fieldset form="form_main">
+    <!--name="" disabled-->
+    <legend>Заголовок</legend>
+    <label for="input_one">Ваш ответ ?</label>
+    <input type="text" id="input_one" placeholder="Да\Нет?" maxlength="3" required>
+    <label for="input_two">pw</label>
+    <input type="password" placeholder="Пароль" id="input_two" maxlength="12">
+    <label for="form_text">Текст</label>
+    <input type="text" placeholder="some text..." id="form_text"><br />
+    <label for="text_area">Многострочный комментарий</label><textarea name="text_area" id="text_area" cols="20" rows="2" autofocus>Накалякано</textarea>
+</fieldset>
+    <fieldset><legend>Загузить файл</legend>
+        <div>
+            <label for="file_input">file upload</label>
+            <input type="file" placeholder="here!" id="file_input">
+    </div>
+        <div>
+            <label for="file_input2">image upload</label>
+            <input type="file" placeholder="here!" id="file_input2" accept="*.jpg*">
+        </div>
+    <div>
+        <label for="file_input3">multi upload</label>
+        <input type="file" placeholder="here!" id="file_input3" multiple>
+    </div>
+    </fieldset>
+    <fieldset>
+        <legend>Не связанные Радио</legend>
+        <div>
+            <label for="da">DA</label><input type="radio" checked id="da2">
+            <label for="net">NET</label><input type="radio" id="net2">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Радио</legend>
+    <div>
+    <label for="da">DA</label><input type="radio" name="da" checked id="da">
+    <label for="net">NET</label><input type="radio" name="da" id="net">
+    </div>
+    </fieldset>
+    <fieldset>
+        <legend>Checkboxes</legend>
+        <label for="flag1">Галочка1</label>
+    <input type="checkbox" name="flag" id="flag1">
+    <label for="flag2">Галочка2</label>
+    <input type="checkbox" name="flag" id="flag2">
+    </fieldset>
+    <fieldset>
+        <legend>Checkboxes multi</legend>
+        <label for="flag3">Галочка1</label>
+        <input type="checkbox" name="flag" id="flag3">
+        <label for="flag4">Галочка2</label>
+        <input type="checkbox" name="flag" id="flag4">
+        <label for="flag5">Галочка3</label>
+        <input type="checkbox" name="flag" id="flag5">
+    </fieldset>
+    <fieldset><legend>button</legend>
+        <label for="button1">КнопкаРас</label>
+        <input type="button" id="button1" value="Кнопка">
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Сбросить">
+        <input type="image" src="reboot.jpg" alt="netu">
+        <button type="button"> КнопкаДжваТегButton</button>
+        <button type="reset"> СбросТегButton</button>
+        <button type="submit"> СбросТегButton</button>
+        <button type="submit" formaction="#" formmethod="post" formnovalidate value="" disabled>disabled</button>
+    </fieldset>
+<fieldset>
+    <legend>Выпадающее меню</legend>
+    <select name="select_test" id="" autofocus size="1">
+        <option value="1">Item1</option>
+        <option value="2">Item2</option>
+        <option value="3">Item3</option>
+        <option value="4">Item4</option>
+        <option value="5">Item5</option>
+    </select>
+    <select name="select_test" id="" autofocus size="5">
+        <option value="1">Item1</option>
+        <option value="2" selected>Item2</option>
+        <option value="3">Item3</option>
+        <option value="4">Item4</option>
+        <option value="5">Item5</option>
+    </select>
+    <select name="select_test" id="" autofocus size="3" multiple>
+    <option value="1">Item1</option>
+    <option value="2">Item2</option>
+    <option value="3">Item3</option>
+    <option value="4">Item4</option>
+    <option value="5" selected>Item5</option>
+    <option value="6">Item6</option>
+    <option value="7">Item7</option>
+    <option value="8">Item8</option>
+</select>
+    <select name="" id="" multiple size="12">
+        <optgroup label="Group A">
+            <option value="1">Name 1</option>
+            <option value="2">Name 2</option>
+            <option value="3">Name 3</option>
+            <option value="4">Name 4</option>
+            <option value="5">Name 5</option>
+            <option value="6">Name 6</option>
+        </optgroup>
+        <optgroup label="Group B">
+            <option value="1">Name 1</option>
+            <option value="2">Name 2</option>
+            <option value="3">Name 3</option>
+            <option value="4">Name 4</option>
+            <option value="5">Name 5</option>
+            <option value="6">Name 6</option>
+        </optgroup>
+    </select>
+</fieldset>
+    <fieldset>
+        <legend>E-mail</legend>
+        <label for="email">Ящик электронной почты</label>
+        <input type="email" id="email">
+        <label for="url">Веб-Адрес</label>
+        <input type="url" placeholder="http://" id="url">
+        <label for="color">Цвет</label>
+        <input type="color" id="color" value="#00fe33">
+        <label for="num">Номер</label>
+        <input type="number" value="10" max="12" id="num">
+        <label for="range"></label>
+        <input type="range" id="range" max="100" value="30">
+        <label for="data">Data</label>
+        <input type="date" id="data" value="2018-04-08">
+    </fieldset>
+    <input type="submit">
+    <fieldset>
+        <legend>Data and Time</legend>
+        <label for="Data2">Data:</label>
+        <input type="datetime" id="data2" value="2018-04-08 04:38">
+        <div>
+            <label for="time">Поле для ввода времени</label>
+            <input type="time" id="time" value="04:38" min="00:00" max="23:59">
+        </div>
+    </fieldset>
+    <fieldset><legend>Tel & Search</legend>
+        <label for="tel">Телефон</label>
+        <input type="tel" id="tel" title="номер телефона">
+        <div>
+            <label for="search">Поиск</label>
+            <input type="search" id="search" title="поиск">
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>
