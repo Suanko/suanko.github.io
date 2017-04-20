@@ -1,0 +1,75 @@
+/*h3  {
+    color:green;
+}
+селектор{
+    свойство1: значение;
+    свойство2: значение;
+    свойство3: значение1 значение2;
+}
+типы селекторов:
+1.классы => .имя_класса
+2.селекторы тегов => имя_тега
+3.идентификаторы => #id
+4.контекстные селекторы => .имя_класса тег*/
+
+/*классы*/
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 10px;
+}
+.red{
+    background: red;
+}
+.yellow{
+    background: yellow;
+}
+.green{
+    background: green;
+}
+.menu li{
+    list-style: none;
+    display: inline;
+    margin: 10px;
+}
+.menu a {
+    text-decoration: none;
+    color: aqua;
+}
+.menu a:hover{
+    color: green;
+}
+.block{
+    background: red;
+    margin: 5px;
+    display: inline-block;
+}
+.block1{
+    width:10px;
+    height: 60px;
+}
+.block2{
+    width:30px;
+    height: 40px;
+}
+.block3{
+    width:50px;
+    height: 20px;
+}
+p{
+    color: green;
+    font-style: italic;
+}
+.red_text{
+    color: red;
+}
+/*
+типы значенией стилевых свойств
+1. строки - "значения"
+2. числа - 40, 1.2;
+3. проценты - 20%;
+4. размеры - 40px, 1.3em, 60%;
+5. цвета - #000000, red, rgba(0,0,0,0), rgb(0,0,0);
+6. адреса - url(../путь)
+7. ключевые слова - left, top, bottom, right;*/
