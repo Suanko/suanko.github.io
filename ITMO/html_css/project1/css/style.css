@@ -42,12 +42,12 @@ body{
     width:100%;
 }
 .img1 {
-    background: url("../img/most.jpg") no-repeat;
+    background: url("http://lorempixel.com/output/nature-q-g-1920-1920-10.jpg") no-repeat;
     -webkit-background-size:;
     background-size:100%;
 }
 .img2 {
-    background: url("../img/most.jpg") no-repeat;
+    background: url("http://lorempixel.com/output/people-q-g-1920-1920-4.jpg") no-repeat;
     display: none;
 }
 .img3 {
@@ -59,7 +59,7 @@ body{
     width:30%;
     display: inline-block;
     border: gray solid;
-    background: url("../img/most.jpg") no-repeat;
+    background: url("http://lorempixel.com/output/nature-q-c-640-480-8.jpg") no-repeat;
     -webkit-background-size:;
     background-size:cover;
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <style> input{
+       margin: 3px;
+    }</style>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="header col-12">
+        <p class="logo">Макаронная дрель <sub>сверхтвёрдые сорта пшеницы</sub></p>
+        <ul class="menu col-6 offset-3">
+            <li class="display_menu">Навигация
+                <ul class="sub_menu">
+                    <li>Карта сайта</li>
+                    <li>Фоточки</li>
+                    <li>Форточки</li>
+                </ul></li>
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="price.html">Услуги</a></li>
+            <li><a href="us.html">О Нас</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="form.html">Заявка</a></li>
+        </ul>
+    </div>
+<fieldset>
+    <legend>Заявка</legend>
+    <form action="" id="main_form">
+        <label for="first_name">Имя</label><input type="text" id="first_name" placeholder="Иван"><br />
+        <label for="last_name">Фамилия</label><input type="text" id="last_name" placeholder="Иванов"><br />
+        <label for="last_name2">Отчество</label><input type="text" id="last_name2" placeholder="Иванович"><br />
+        <label for="email">Почтовый адрес</label><input type="email" id="email" placeholder="@ya.ru"><br />
+        <label for="photo">Фото</label><input type="file" accept="*.jpg*" id="photo" placeholder="jpg only"><br />
+        <label for="soc">Страница в соц.сети\группа</label><input type="url" placeholder="http://" id="soc"><br />
+        <label for="login">Логин</label><input type="text" id="login" placeholder="Login">
+        <label for="pw">Пароль</label><input type="password" id="pw" minlength="8" placeholder="Password min 8 length"><br />
+        <label for="sex_div">Пол</label>
+        <div id="sex_div"><label for="sex">Муж.</label><input type="radio" id="sex" name="sex">
+            <label for="sex2">Жен.</label><input type="radio" id="sex2" name="sex"></div>
+        <label for="tel">Телефон</label><input type="tel" id="tel" placeholder="+7...">
+        <label for="time">Удобное время звонка</label><input type="time" id="time">
+        <div>
+            <label for="category">Категория поставок</label><br /><select name="category" id="category" multiple size="10">
+            <optgroup label="Продажа">
+                <option value="1">Нефть</option>
+                <option value="2">Золото</option>
+                <option value="3">Платина</option>
+                <option value="4">Рубидий</option>
+            </optgroup>
+            <optgroup label="Покупка">
+                <option value="1">Шоколад</option>
+                <option value="2">Молоко</option>
+                <option value="3">Гречка</option>
+                <option value="4">Яблоки</option>
+            </optgroup>
+        </select>
+        </div>
+        <label for="post">Поставки в неделю</label><input type="range" max="999" id="post"><br />
+        <label for="data">Дата с которой вы готовы сотрудничать</label><input type="data" id="data" value="2018-04-08 04:38"><br />
+        <input type="reset" value="Сброс">
+        <button type="submit">Подтвердить</button>
+    </form>
+</fieldset>
+</div>
+</body>
+</html>

@@ -73,3 +73,51 @@ p{
 5. цвета - #000000, red, rgba(0,0,0,0), rgb(0,0,0);
 6. адреса - url(../путь)
 7. ключевые слова - left, top, bottom, right;*/
+
+/*Псевдоклассы*/
+
+a:hover {
+    color:red;
+}
+a:link{
+}
+a:visited{
+}
+a:focus{
+}
+:disabled{
+}
+:enabled{
+}
+:checked{
+}
+/*положение в DOM*/
+:root;
+li:nth-child(even){
+} /*чётные*/
+li:nth-child(odd){
+} /*Нечётные*/
+li:nth-child(index){
+} /*конкретный*/
+li:nth-child(3n+b){
+} /*формула*/
+:first-child{
+} /*первый дочерний элемент*/
+:last-child{
+} /*последний дочерний элемент*/
+
+
+/*ПСЕВДОЭЛЕМЕНТЫ*/
+p:first-letter{
+}
+.row:after{
+}
+.row:before{
+}
+p{
+    color: #ff984f; !important;
+}
+/*специфичность селектора
+идентификатор - 100 / 0.1.0.0
+класс, псевдокласс - 10 / 0.0.1.0
+элемент, псевдоэлемент - 1 /  0.0.0.1*/
