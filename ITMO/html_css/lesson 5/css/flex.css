@@ -1,0 +1,123 @@
+.flex_container{
+    display: flex;
+    background: red;
+    justify-content: space-between;
+}
+body, p{
+    margin:0;
+}
+.flex_element{
+    text-align: center;
+    background: dodgerblue;
+    width: 90px;
+    height: 90px;
+}
+.flex_container2{
+    display: flex;
+    background: red;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex_element2{
+    text-align: center;
+    background: dodgerblue;
+    width: 120px;
+    height: 120px;
+}
+.flex_container3{
+    display: flex;
+    background: red;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+.flex_container4{
+    width:300px;
+    display: flex;
+    background: red;
+    align-items: stretch;
+    flex-wrap: wrap-reverse;
+    align-content: flex-start;
+    height: 600px;
+}
+.flex_container5{
+    display: flex;
+    align-items: stretch;
+    background: red;
+    justify-content: space-between;
+}
+.order{
+    order: 3;
+}
+.flex-basic{
+    flex-basis: 150px;
+    /*flex-grow: 3;
+    flex-shrink: 3;*/ /*расширение и сужение*/
+}
+.align-self{
+    align-self: flex-end;
+}
+.wrapper{
+    width: 960px;
+    background: lightblue;
+    display: flex;
+    margin: 0 auto;
+}
+.element1{
+    height: 300px;
+}
+.text{
+    background: green;
+}
+.image{
+    background: yellow;
+}
+.element2{
+    height:150px;
+}
+.flex_content{
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+.flex_content2{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+.flex_column{
+    margin:0 0 20px;
+    width: 90%;
+}
+.flex_column:hover{
+    box-shadow: 1px 1px 1px;
+}
+.flex_row:hover{
+    box-shadow: 1px 1px 1px;
+}
+.no_margin{
+    margin-bottom: 0;
+}
+.main_element{
+    width: 45%;
+}
+.sub_element{
+    width: 40%;
+}
+.content_one{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
+.content_two{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 300px;
+}

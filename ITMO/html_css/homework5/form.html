@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <style> input{
+       margin: 3px;
+    }</style>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <p class="logo">Макаронная дрель <sub>сверхтвёрдые сорта пшеницы</sub></p>
+        <ul class="menu col-6 offset-3">
+            <li class="display_menu">Навигация
+                <ul class="sub_menu">
+                    <li>Карта сайта</li>
+                    <li>Фоточки</li>
+                    <li>Форточки</li>
+                </ul></li>
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="price.html">Услуги</a></li>
+            <li><a href="us.html">О Нас</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="form.html">Заявка</a></li>
+        </ul>
+    </div>
+<fieldset>
+    <legend>Заявка</legend>
+    <form action="" id="main_form">
+        <div class="has-success">
+        <label for="first_name">Имя</label><input type="text" id="first_name" class="form-control" placeholder="Иван"></div>
+        <div class="has-warning has-feedback">
+            <label for="last_name">Фамилия</label><input type="text" id="last_name" class="form-control" placeholder="Иванов">
+            <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+            <span id="inputWarning2Status" class="sr-only">(warning)</span>
+        </div>
+        <div class="has-warning">
+        <label for="last_name2">Отчество</label><input type="text" id="last_name2" class="form-control has-warning" placeholder="Иванович"></div>
+        <label for="email">Почтовый адрес</label><input type="email" id="email" class="form-control" placeholder="@ya.ru">
+        <label for="photo">Фото</label><input type="file" accept="*.jpg*" id="photo" placeholder="jpg only">
+        <div class="form-inline"><label for="soc">Страница в соц.сети\группа</label><input type="url" class="form-control" placeholder="http://" id="soc">
+        <label for="login">Логин</label><input type="text" class="form-control" id="login" placeholder="Login">
+        <label for="pw">Пароль</label><input type="password" id="pw" minlength="8" class="form-control" placeholder="Password min 8 length">
+        </div>
+        <label for="sex_div">Пол</label>
+        <div id="sex_div" class="form-inline"><label for="sex">Муж.</label><input type="radio" id="sex" name="sex">
+            <label for="sex2">Жен.</label><input type="radio" id="sex2" name="sex"></div>
+        <div class="form-inline">
+        <label for="tel">Телефон</label><input type="tel" id="tel" placeholder="+7..." class="form-control">
+        <label for="time">Удобное время звонка</label><input type="time" id="time" class="form-control">
+        </div>
+        <div>
+            <label for="category">Категория поставок</label><br /><select name="category" id="category" multiple size="10" class="form-control">
+            <optgroup label="Продажа">
+                <option value="1">Нефть</option>
+                <option value="2">Золото</option>
+                <option value="3">Платина</option>
+                <option value="4">Рубидий</option>
+            </optgroup>
+            <optgroup label="Покупка">
+                <option value="1">Шоколад</option>
+                <option value="2">Молоко</option>
+                <option value="3">Гречка</option>
+                <option value="4">Яблоки</option>
+            </optgroup>
+        </select>
+        </div>
+        <label for="post">Поставки в неделю</label><input type="range" max="999" id="post" class="form-control">
+        <div class="form-group">
+        <label for="data">Дата с которой вы готовы сотрудничать</label><input type="data" id="data" value="2018-04-08 04:38" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="reset" value="Сброс" class="btn btn-danger">
+            <button type="button" class="btn btn-success">Подтвердить</button>
+        </div>
+        <div class="form-group form-inline">
+            <label class="sr-only" for="exampleInputAmount">Пожертвовать? (в рублях)</label>
+            <div class="input-group">
+                <div class="input-group-addon">₽</div>
+                <input type="text" class="form-control" id="exampleInputAmount" placeholder="Дай денег">
+                <div class="input-group-addon">1000.00</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Transfer cash</button>
+        </div>
+    </form>
+</fieldset>
+</div>
+</body>
+</html>
