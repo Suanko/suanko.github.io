@@ -208,6 +208,12 @@ only
     }
 }
 @media screen and (max-width: 480px) {
+    .cols_text2{
+        columns:1
+    }
+    .cols_text3{
+        columns:1
+    }
     .news_block{
         display: none;
     }

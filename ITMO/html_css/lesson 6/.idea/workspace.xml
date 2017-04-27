@@ -24,8 +24,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gridProj/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="244" column="4" selection-start-line="244" selection-start-column="4" selection-end-line="246" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="212" column="5" selection-start-line="212" selection-start-column="5" selection-end-line="212" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -34,7 +34,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gridProj/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="-638">
               <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding />
             </state>
@@ -173,12 +173,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1493305581329</updated>
-      <workItem from="1493305582411" duration="9547000" />
+      <workItem from="1493305582411" duration="10173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9547000" />
+    <option name="totallyTimeSpent" value="10173000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="696" height="735" extended-state="0" />
@@ -260,7 +260,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gridProj/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="-638">
           <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding />
         </state>
@@ -268,8 +268,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gridProj/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="244" column="4" selection-start-line="244" selection-start-column="4" selection-end-line="246" selection-end-column="5" />
+        <state relative-caret-position="170">
+          <caret line="212" column="5" selection-start-line="212" selection-start-column="5" selection-end-line="212" selection-end-column="5" />
           <folding />
         </state>
       </provider>
