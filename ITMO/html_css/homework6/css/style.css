@@ -1,0 +1,11 @@
+﻿body, p, h1, h2{
+    margin: 0;
+}
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+    border: solid 1px red;
+}
+.header{
+    border: solid 1px red;
+}

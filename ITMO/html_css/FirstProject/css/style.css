@@ -1,0 +1,139 @@
+﻿body, p, h1, h2, ul {
+    margin: 0;
+}
+.main-wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+.slider ul{
+    padding: 0;
+}
+.slider1, .slider2, .slider3, .slider4{
+    display: none;
+    height: 496px;
+}
+.slider1{
+    background-image: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_site.jpg?itok=1Tcivg5y&timestamp=1477419942");
+    background-size:cover;
+}
+.slider2{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/201704/JoshGroban_GreatComet_WebsiteBanner_2560x943_040417.jpg?itok=_ivPKahj&timestamp=1492184912");
+    background-size:cover;
+}
+.slider3{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_GreatComet.jpg?itok=EKxmttMP&timestamp=1477346951");
+    background-size:cover;
+}  
+.slider4{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_fanclub.jpg?itok=FJvXzPbh&timestamp=1477346951");
+    background-size:cover;
+}
+.active{
+    display: block;
+}
+.row{
+    margin: 0;
+}
+.nav{
+    height: 83px;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    font-family: 'Economica', sans-serif;
+    position: relative;
+}
+.nav-center{
+    vertical-align: middle;
+    line-height: 83px;
+}
+.menu{
+    display: inline;
+    position: absolute;
+    right: 0;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-right: 18px;
+    line-height: normal;
+}
+.menu li:hover {
+    color: #53adc7;
+}
+.mini-logo{
+    text-transform: uppercase;
+    display: inline;
+    left:0;
+}
+.join{
+    background: #0f2436;
+    height: 148px;
+    border-top: solid 1px #0f2436;
+    border-bottom: solid 1px #0f2436;
+    font-family: 'Economica', sans-serif;
+    text-align: center;
+}
+.join_h1{
+    font-size: 31.46px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.email_add{
+    width: 200px;
+    border: none;
+    border-bottom: solid 4px #fff;
+    background: transparent;
+    height: 35px;
+    margin-top: 20px;
+    width: 400px;
+    display: inline;
+}
+input::placeholder{
+    font-size: 22px;
+    color: #fff;
+}
+.email_button{
+    height: 48px;
+    color: #fff;
+    background: #53adc7;
+    border: 0;
+    padding: 0 50px;
+    font-size: 22px;
+    margin-left: 10px;
+    position: relative;
+}
+.email_button:hover{
+    color: #000;
+    background: #fff;
+}
+.email{
+    display: inline-block;
+    position: relative;
+}
+.terms {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+.terms a{
+    font-size: 12px;
+    color: #5a5a5a;
+    text-transform: uppercase;
+}
+.terms a:hover{
+    text-decoration: underline;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu{
+    border: none;
+    top:17px;
+    box-shadow: none;
+}
+.dropdown-menu li:hover{
+    color: #53adc7;
+}
