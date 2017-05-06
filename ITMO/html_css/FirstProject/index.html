@@ -7,21 +7,21 @@
     <link href="https://fonts.googleapis.com/css?family=Economica:700" rel="stylesheet">
 </head>
 <body>
-<div class="main-wrapper">
-<div class="slider">
-    <ul>
-        <li class="slider1 active"></li>
-        <li class="slider2"></li>
-        <li class="slider3"></li>
-        <li class="slider4"></li>
+<div class="main-wrapper col-12">
+    <div class="player"></div>
+    <ul class="slider">
+        <li class="slider1 active"><img src="http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_site.jpg?itok=1Tcivg5y&timestamp=1477419942" alt=""></li>
+        <li class="slider2"><img src="http://www.joshgroban.com/sites/g/files/g2000006141/f/201704/JoshGroban_GreatComet_WebsiteBanner_2560x943_040417.jpg?itok=_ivPKahj&timestamp=1492184912" alt=""></li>
+        <li class="slider3"><img src="http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_GreatComet.jpg?itok=EKxmttMP&timestamp=1477346951" alt=""></li>
+        <li class="slider4"><img src="http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_fanclub.jpg?itok=FJvXzPbh&timestamp=1477346951" alt=""></li>
     </ul>
-</div>
-    <div class="row">
-<div class="nav col-8 offset-2">
+    <div class="to-white">
+    <div class="content-wrapper">
+<div class="nav">
     <div class="nav-center">
     <p class="mini-logo">josh groban</p>
     <ul class="menu">
-        <li class=""><a href="#" title="" class="active">Home</a></li>
+        <li><a href="#" title="" class="nav-home">Home</a></li>
         <li class=""><a href="#" title="">News</a></li>
         <li class="dropdown"><a href="#" title="">Photos</a>
             <ul class="dropdown-menu">
@@ -41,14 +41,68 @@
     </div>
 </div>
 </div>
-<div class="join">
+    </div>
+    <div class="row">
+<div class="join col-12">
     <form action="" class="email">
-        <h1 class="join_h1">join the mailing list</h1>
-        <input type="email" class="email_add" placeholder="E-MAIL ADRESS">
+        <p class="join_h1">join the mailing list</p>
+        <input type="email" class="email_add" placeholder="E-MAIL ADRESS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-MAIL ADRESS'">
         <button class="email_button">SIGN UP</button>
         <span class="terms"><a href="#">terms</a></span>
     </form>
 </div>
+    </div>
+    <div class="row">
+        <div class="content-wrapper">
+            <div class="news">
+                <div class="news-header">
+                    <p class="news-logo">news</p>
+                    <div class="news-button"><a href="#">view all news</a></div>
+                </div>
+                <ul class="news-view">
+                    <li class="news-1st"><div class="img-1st"></div><p class="news-date">03 may</p>
+                        <a href="#" class="news-goto">BE A PART OF JOSH'S PHOTOGRAPH BOOK!</a>
+                        <a href="#" class="news-read-more">read more»</a></li>
+                    <li class="news-2nd"><div class="img-2nd"></div><p class="news-date">02 may</p>
+                        <a href="#" class="news-goto">THE GREAT COMET NOMINATED FOR 12 TONY AWARDS!</a>
+                        <a href="#" class="news-read-more">read more»</a></li>
+                    <li class="news-3nd"><div class="img-3nd"></div><p class="news-date">27 april</p>
+                        <a href="#" class="news-goto">WATCH JOSH & THE GREAT COMET CAST ON THE TODAY SHOW FRIDAY, APR. 28TH!</a>
+                        <a href="#" class="news-read-more">read more»</a></li>
+                </ul>
+            </div>
+            <div class="instagram">
+                <div class="instagram-header">
+                    <p class="instagram-logo">instagram - <span class="insta-link">@JoshGroban</span></p>
+                    <div class="instagram-button"><a href="#">view all photos</a></div>
+                </div>
+                <ul class="instagram-view">
+                    <div class="instagram-container">
+                    <li class="instagram-photo1"></li>
+                    <li class="instagram-photo2"></li>
+                    <li class="instagram-photo3"></li>
+                    <li class="instagram-photo4"><div class="insta-video"></div></li>
+                    </div>
+                    <div class="instagram-container">
+                    <li class="instagram-photo5"></li>
+                    <li class="instagram-photo6"></li>
+                    <li class="instagram-photo7"><div class="insta-video"></div></li>
+                    <li class="instagram-photo8"></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="video">
+                <div class="video-header">
+                    <p class="video-logo">video</p>
+                    <div class="video-button"><a href="#">view all videos</a></div>
+                </div>
+                    <ul class="video-view">
+                        <li class="video-photo1"><div class="video-push"></div></li>
+                        <li class="video-photo2"><div class="video-push"></div></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

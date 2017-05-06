@@ -1,32 +1,23 @@
 ﻿body, p, h1, h2, ul {
     margin: 0;
+    background: #f3f3e7;
 }
 .main-wrapper{
-    width: 100%;
-    margin: 0 auto;
+    height: 100%;
 }
-.slider ul{
+.player{
+    height: 35px;
+    background: #000;
+}
+.slider{
     padding: 0;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
 }
 .slider1, .slider2, .slider3, .slider4{
     display: none;
-    height: 496px;
-}
-.slider1{
-    background-image: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_site.jpg?itok=1Tcivg5y&timestamp=1477419942");
-    background-size:cover;
-}
-.slider2{
-    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/201704/JoshGroban_GreatComet_WebsiteBanner_2560x943_040417.jpg?itok=_ivPKahj&timestamp=1492184912");
-    background-size:cover;
-}
-.slider3{
-    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_GreatComet.jpg?itok=EKxmttMP&timestamp=1477346951");
-    background-size:cover;
-}  
-.slider4{
-    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_fanclub.jpg?itok=FJvXzPbh&timestamp=1477346951");
-    background-size:cover;
 }
 .active{
     display: block;
@@ -34,22 +25,27 @@
 .row{
     margin: 0;
 }
+.to-white{
+    width: 100%;
+    background: #fff;
+}
 .nav{
     height: 83px;
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     font-family: 'Economica', sans-serif;
     position: relative;
+    background: transparent;
 }
 .nav-center{
-    vertical-align: middle;
-    line-height: 83px;
+    line-height: 81px;
 }
 .menu{
     display: inline;
     position: absolute;
     right: 0;
     padding: 0;
+    background: transparent;
 }
 .menu li{
     display: inline-block;
@@ -58,30 +54,74 @@
     margin-right: 18px;
     line-height: normal;
 }
-.menu li:hover {
+.menu li:not(:nth-child(1))>a{
+    color: black;
+}
+.menu li>a:hover{
     color: #53adc7;
+    text-decoration: none;
+}
+.nav-home{
+    border-bottom: solid 3px #53adc7;
+    color:#53adc7;
+    padding-bottom: 1px;
 }
 .mini-logo{
     text-transform: uppercase;
     display: inline;
     left:0;
+    font-size:22px;
+    background: transparent;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu{
+    border: none;
+    top:18px;
+    left: -10px;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    border-radius: 0;
+}
+.dropdown-menu li{
+    margin: 0;
+}
+.dropdown-menu>li:first-child>a {
+    margin-top: 10px;
+}
+.dropdown-menu>li:last-child>a{
+    margin-bottom: 10px;
+}
+.dropdown-menu li> a{
+    margin: 2px 12px;
+    padding: 0;
+}
+.dropdown-menu li> a:hover{
+    color: #53adc7;
+    background-color: transparent;
+}
+.dropdown-menu li:focus{
+    background-color: transparent;
 }
 .join{
-    background: #0f2436;
-    height: 148px;
-    border-top: solid 1px #0f2436;
-    border-bottom: solid 1px #0f2436;
+    background: #172838;
+    height: 168px;
+    border-top: solid 1px #172838;
+    border-bottom: solid 1px #172838;
     font-family: 'Economica', sans-serif;
     text-align: center;
 }
 .join_h1{
-    font-size: 31.46px;
+    font-size: 32px;
     color: #fff;
     text-transform: uppercase;
     margin-top: 15px;
+    background: transparent;
 }
 .email_add{
-    width: 200px;
     border: none;
     border-bottom: solid 4px #fff;
     background: transparent;
@@ -89,10 +129,15 @@
     margin-top: 20px;
     width: 400px;
     display: inline;
+    font-size: 22px;
+    color: #fff;
 }
 input::placeholder{
     font-size: 22px;
     color: #fff;
+}
+input:focus{
+    outline: none;
 }
 .email_button{
     height: 48px;
@@ -115,25 +160,254 @@ input::placeholder{
 .terms {
     display: block;
     position: absolute;
-    bottom: -20px;
+    bottom: -18px;
     left: 0;
 }
 .terms a{
     font-size: 12px;
-    color: #5a5a5a;
+    color: #8a8e94;
     text-transform: uppercase;
 }
 .terms a:hover{
     text-decoration: underline;
 }
-.dropdown:hover .dropdown-menu{
+.content-wrapper{
+    margin: 0 auto;
+    max-width: 1203px;
+}
+.news{
+    text-transform: uppercase;
+}
+.news-header{
+    width: 100%;
+    padding: 56px 0 25px;
+}
+.news-logo{
+    display: inline;
+    font-size:40px;
+    color:#252525;
+}
+.news-button{
+    background: #53adc7;
+    border: 0;
+    font-size: 15px;
+    height: 27px;
+    text-transform: uppercase;
+    line-height:27px;
+    vertical-align: middle;
+    float: right;
+    margin-top: 15px;
+}
+.news-button>a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 29px;
+}
+.news-button:hover{
+    background: #172838;
+}
+.news-view{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.news-1st, .news-2nd, .news-3nd{
+    width: 32%;
+    min-height: 506px;
+    list-style-type: none;
+    display: inline-block;
+    background: #fff;
+    line-height: 1.2;
+}
+.img-1st, .img-2nd, .img-3nd{
+    width: 100%;
+    padding-bottom: 55%;
+}
+.img-1st{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/photo-credit-brian-bowen-smith-medium_1462485322527.jpg");
+    background-size:cover;
+}
+.img-2nd{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/styles/360___192/public/201705/18238896_727228634105042_1209868961482502912_o.jpg?itok=4eKuo_oA");
+    background-size:cover;
+}
+.img-3nd{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/styles/360___192/public/201704/Screen%20Shot%202017-04-28%20at%207.53.45%20AM.png?itok=hg1HBdTQ");
+    background-size:cover;
+}
+.news-date{
+    font-size: 24px;
+    color: #53adc7;
+    padding: 34px 22px 22px;
+    background:#fff;
+}
+.news-goto{
+    font-size: 30px;
+    color:#252525;
+    display: block;
+    padding: 0px 22px 8px;
+}
+.news-goto:hover{
+    color: #53adc7;
+    text-decoration: none;
+}
+.news-read-more{
+    font-size: 15px;
+    color: #53adc7;
+    padding: 0px 0px 55px 22px;
     display: block;
 }
-.dropdown-menu{
-    border: none;
-    top:17px;
-    box-shadow: none;
+.news-read-more:hover{
+    color: #252525;
+    text-decoration: none;
 }
-.dropdown-menu li:hover{
+.instagram{
+    text-transform: uppercase;
+}
+.instagram-header{
+    width: 100%;
+    padding: 56px 0 25px;
+}
+.insta-link{
     color: #53adc7;
+    text-transform: none;
+    font-size:32px;
+}
+.instagram-logo{
+    display: inline;
+    font-size:40px;
+    color:#252525;
+}
+.instagram-button{
+    background: #53adc7;
+    border: 0;
+    font-size: 15px;
+    height: 27px;
+    text-transform: uppercase;
+    line-height:27px;
+    vertical-align: middle;
+    float: right;
+    margin-top: 15px;
+}
+.instagram-button:hover{
+    background: #172838;
+}
+.instagram-button>a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 29px;
+}
+.instagram-view {
+    font-size: 0;
+    padding: 0;
+}
+.instagram-view li{
+    display: inline-block;
+    width: 23.875%;
+    height: 287px;
+    cursor: pointer;
+    background-size:cover;
+    position: relative;
+}
+.instagram-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5%;
+}
+.instagram-photo1{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/styles/500_500/public/201705/18252652_115198955656359_5315283652437868544_n.jpg?itok=Mj3wiSda");
+}
+.instagram-photo2{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/styles/500_500/public/201705/18253324_451827808501387_3242090105296388096_n.jpg?itok=F20nq4bK");
+}
+.instagram-photo3{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/styles/500_500/public/201705/18298345_1890898264512819_8639106469981061120_n.jpg?itok=oecBXjvf");
+}
+.instagram-photo4{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/styles/500_500/public/201705/18162017_173421756516168_5427739644437463040_n.jpg?itok=MlUXnMhB");
+}
+.instagram-photo5{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/styles/500_500/public/201705/18252255_1079393555493599_6120769666034958336_n_0.jpg?itok=Yv45C9CS");
+}
+.instagram-photo6{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/styles/500_500/public/201705/18253271_665662060289397_8536123745612333056_n.jpg?itok=AYVoyrXU");
+}
+.instagram-photo7{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/styles/500_500/public/201704/18161056_1701970233437270_6806397693749886976_n.jpg?itok=JrhJIXAE");
+}
+.instagram-photo8{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/styles/500_500/public/201704/18160567_231030647380367_5275430865646649344_n.jpg?itok=8i_X0F49");
+}
+.insta-video{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    width: 26px;
+    height: 26px;
+    background: url("../img/instagram_0.png");
+    background-size:100%;
+}
+.video{
+    text-transform: uppercase;
+}
+.video-header{
+    width: 100%;
+    padding: 56px 0 25px;
+}
+.video-logo{
+    display: inline;
+    font-size:40px;
+    color:#252525;
+    margin-left: 450px;
+}
+.video-button{
+    background: #53adc7;
+    border: 0;
+    font-size: 15px;
+    height: 27px;
+    text-transform: uppercase;
+    line-height:27px;
+    vertical-align: middle;
+    float: right;
+    margin-top: 15px;
+}
+.video-button:hover{
+    background: #172838;
+}
+.video-button>a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 29px;
+}
+.video-view{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.video-view li{
+    background-size:cover;
+    cursor: pointer;
+    width: 48.5%;
+    height: 443px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-photo1{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/styles/video_category_480_360/public/media-youtube/43ZKN5C0Xmk.jpg?itok=hhPioGfg");
+}
+.video-photo2{
+    background: url("http://www.joshgroban.com/sites/g/files/g2000006141/f/styles/video_category_480_360/public/media-youtube/fXnRf3TQcpk.jpg?itok=DfiY329i");
+}
+.video-push{
+    width:82px;
+    height: 82px;
+    background: url("../img/video-play1.png");
+    background-position: 0 0;
+}
+.video-push:hover{
+    width:82px;
+    height: 82px;
+    background: url("../img/video-play1.png");
+    background-position: 82px 82px;
 }
