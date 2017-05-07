@@ -761,7 +761,6 @@ input:focus{
     text-transform: uppercase;
     font-size: 11px;
     padding: 4px 4px 3px 8px;
-    color: #fff;
     position: absolute;
     right: 0;
     top:7px;
@@ -785,6 +784,7 @@ input:focus{
     letter-spacing: 1px;
     margin-left: 10px;
     font-family: 'Roboto', sans-serif;
+    color: #fff;
 }
 .copy-icons{
     height: 30px;
