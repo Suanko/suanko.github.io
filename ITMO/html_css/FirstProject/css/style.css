@@ -24,9 +24,71 @@ body, p, h1, h2, ul {
 .main-wrapper{
     height: 100%;
 }
-.player{
-    height: 35px;
+.header-full-width{
     background: #000;
+    height: 41px;
+}
+.header{
+    line-height: 41px;
+    vertical-align: middle;
+}
+.player{
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    background-color: transparent;
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+.player>li{
+    display: inline-block;
+    font-size:14px;
+    cursor: pointer;
+    color:#fff;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.player>li:nth-child(2){
+    padding-left: 4px;
+    font-size:16px;
+    padding-bottom: 0.5px;
+}
+.player>li:last-child {
+    background: #fff;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #000;
+    font-size: 12px;
+    font-weight:700;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    width: 208px;
+    text-align: center;
+    margin-left: 5px;
+}
+.left:before{
+    content: '\ea1f';
+}
+.left:hover{
+    color:#46b8da;
+}
+.play:before{
+    content: '\ea1c';
+}
+.play:hover{
+    color:#46b8da;
+}
+.right:before{
+    content: '\ea20';
+}
+.right:hover{
+    color:#46b8da;
 }
 .slider{
     padding: 0;
@@ -450,6 +512,7 @@ input:focus{
     padding: 43px 70px 44px;
     margin: 0 0 0 auto;
     box-sizing: content-box;
+    display: inline-block;
 }
 .shop{
     text-transform: uppercase;
@@ -524,7 +587,7 @@ input:focus{
     border: 1px solid #fff;
     box-sizing: border-box;
     max-width:110px;
-    width: 57%;
+    width: 42%;
     margin-right: 5%;
 }
 .merch-img1:hover, .merch-img2:hover{
@@ -543,11 +606,10 @@ input:focus{
 }
 .merch-detail1{
     width: 38%;
-    height: 200px;
     display: inline-block;
 }
 .merch-price1{
-    margin-top: 15px;
+    margin-top: 7%;
     color: #fff;
     line-height:1;
 }
@@ -564,24 +626,24 @@ input:focus{
     height: 33px;
     line-height:33px;
     display: inline-block;
-    margin-top:20px;
+    margin-top:10%;
 }
 .merch-buy-button1>a{
     color: #4795ac;
     text-decoration: none;
-    padding: 8px 18px 5px;
+    padding: 8px 12px 5px;
 }
 .merch-buy-button1:hover{
     background: #172838;
 }
 .merch-detail2{
     margin-top: 4px;
-    width: 52%;
-    height: 106px;
+    width: 42%;
     display: inline-block;
+    font-size: 15px;
 }
 .merch-price2{
-    margin-top: 8px;
+    margin-top: 7%;
     color: #fff;
     line-height:1;
 }
@@ -592,18 +654,17 @@ input:focus{
 .merch-buy-button2{
     background: #fff;
     border: 0;
-    font-size: 15px;
     text-transform: uppercase;
     color: #4795ac;
     height: 33px;
     line-height:33px;
     display: inline-block;
-    margin-top:10px;
+    margin-top:10%;
 }
 .merch-buy-button2>a{
     color: #4795ac;
     text-decoration: none;
-    padding: 8px 18px 5px;
+    padding: 8px 12px 5px;
 }
 .merch-buy-button2:hover{
     background: #172838;
