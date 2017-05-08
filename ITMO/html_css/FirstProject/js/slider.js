@@ -3,7 +3,7 @@ jQuery(document).ready(function ($) {
     $(document).ready(function(){
         setInterval(function () {
             moveRight();
-        }, 5000);
+        }, 7000);
     });
 
     var slideCount = $('#viewport ul li').length;
@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
     function moveLeft() {
         $('#viewport ul').animate({
             left: + slideWidth
-        }, 1500, function () {
+        }, 1000, function () {
             $('#viewport ul li:last-child').prependTo('#viewport ul');
             $('#viewport ul').css('left', '');
         });
@@ -29,7 +29,7 @@ jQuery(document).ready(function ($) {
     function moveRight() {
         $('#viewport ul').animate({
             left: - slideWidth
-        }, 1500, function () {
+        }, 1000, function () {
             $('#viewport ul li:first-child').appendTo('#viewport ul');
             $('#viewport ul').css('left', '');
         });
