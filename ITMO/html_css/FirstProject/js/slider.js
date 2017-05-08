@@ -20,7 +20,7 @@ jQuery(document).ready(function ($) {
     function moveLeft() {
         $('#viewport ul').animate({
             left: + slideWidth
-        }, 1000, function () {
+        }, 500, function () {
             $('#viewport ul li:last-child').prependTo('#viewport ul');
             $('#viewport ul').css('left', '');
         });
@@ -29,7 +29,7 @@ jQuery(document).ready(function ($) {
     function moveRight() {
         $('#viewport ul').animate({
             left: - slideWidth
-        }, 1000, function () {
+        }, 500, function () {
             $('#viewport ul li:first-child').appendTo('#viewport ul');
             $('#viewport ul').css('left', '');
         });
