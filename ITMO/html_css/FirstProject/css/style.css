@@ -29,8 +29,10 @@ body, p, h1, h2, ul {
     height: 41px;
 }
 .header{
-    line-height: 41px;
-    vertical-align: middle;
+    line-height: 35px;
+    max-width:1203px;
+    margin: 0 auto;
+    text-align-last: justify;
 }
 .player{
     list-style-type: none;
@@ -44,6 +46,8 @@ body, p, h1, h2, ul {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    vertical-align: middle;
+    text-align-last: auto;
 }
 .player>li{
     display: inline-block;
@@ -61,7 +65,6 @@ body, p, h1, h2, ul {
 .player>li:last-child {
     background: #fff;
     text-transform: uppercase;
-    vertical-align: middle;
     color: #000;
     font-size: 12px;
     font-weight:700;
@@ -70,7 +73,7 @@ body, p, h1, h2, ul {
     line-height: 1;
     width: 208px;
     text-align: center;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 .left:before{
     content: '\ea1f';
@@ -89,6 +92,147 @@ body, p, h1, h2, ul {
 }
 .right:hover{
     color:#46b8da;
+}
+.email-add-short{
+    border: none;
+    border-bottom: solid 2px #fff;
+    background: transparent;
+    width: 248px;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1;
+    height: 15px;
+    vertical-align: text-top;
+}
+.email-add-short::placeholder{
+    font-size:14px;
+}
+.email-button-short{
+    color: #fff;
+    background: #53adc7;
+    border: 0;
+    padding: 5px 30px;
+    font-size: 14px;
+    position: relative;
+    line-height: 1;
+    margin-left:10px;
+    height: 26px;
+    vertical-align: middle;
+}
+.email-button-short:hover{
+    color: #000;
+    background: #fff;
+}
+.email-short{
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+}
+.terms-short {
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+.terms-short a{
+    font-size: 10px;
+    color: #fff;
+    font-weight: 700;
+}
+.terms-short a:hover{
+    text-decoration: underline;
+}
+.short-icons{
+    display: inline-block;
+    height: 24px;
+}
+.header-icomoon{
+    padding: 0;
+    background-color: transparent;
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 17px;
+    position: relative;
+}
+.header-icomoon li{
+    display: inline-block;
+    list-style-type: none;
+    line-height:normal;
+    color: #fff;
+    vertical-align: middle;
+}
+.header-icomoon li:hover{
+    cursor: pointer;
+}
+.link-facebook-short:before{
+    content: '\ea90';
+}
+.link-facebook-short:hover{
+    color:#46b8da;
+}
+.link-twitter-short:before{
+    content: '\ea96';
+}
+.link-twitter-short:hover{
+    color:#46b8da;
+}
+.link-youtube-short:before{
+    content: '\ea9d';
+}
+.link-youtube-short:hover{
+    color:#46b8da;
+}
+.link-myspace-short:before{
+    content: '\ea92';
+}
+.link-myspace-short:hover{
+    color:#46b8da;
+}
+.fs-music-short{
+    background: url("../img/follow-badge_black.svg"), no-repeat;
+    height: 20px;
+    width: 101px;
+}
+.ghost-short{
+    min-width: 92px;
+}
+.spotify-embed-short{
+    min-width: 92px;
+    background: #2ebd59;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 4px 4px 3px 8px;
+    position: absolute;
+    right: 0;
+    top:2px;
+}
+.spotify-embed-short:hover{
+    background: #1ed760;
+}
+.spotify-icon-short{
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    position: absolute;
+    top:1px;
+    left: 2px;
+    background: url("../img/sprite@1.png");
+    background-position: 0 0;
+    border-radius: 50px;
+}
+.spotify-embed-short>span{
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
 }
 .slider{
     padding: 0;
