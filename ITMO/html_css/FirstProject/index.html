@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="js/slider.js"></script>
+    <!--<script src="js/slider.js"></script>-->
 </head>
 <body>
 <div class="main-wrapper col-12">
@@ -41,22 +41,22 @@
     </div>
     </div>
     <div id="block-for-slider">
-            <div id="prev-btn"></div>
-            <div id="next-btn"></div>
-        <ul id="nav-btns">
-            <li class="slide-nav-btn"></li>
-            <li class="slide-nav-btn"></li>
-            <li class="slide-nav-btn flex-active"></li>
-            <li class="slide-nav-btn"></li>
-        </ul>
-        <div id="viewport">
-            <ul id="slidewrapper">
-        <li class="slide"><img src="http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_site.jpg?itok=1Tcivg5y&timestamp=1477419942" alt=""></li>
-        <li class="slide"><img src="http://www.joshgroban.com/sites/g/files/g2000006141/f/201704/JoshGroban_GreatComet_WebsiteBanner_2560x943_040417.jpg?itok=_ivPKahj&timestamp=1492184912" alt=""></li>
-        <li class="slide"><img src="http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_GreatComet.jpg?itok=EKxmttMP&timestamp=1477346951" alt=""></li>
-        <li class="slide"><img src="http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_fanclub.jpg?itok=FJvXzPbh&timestamp=1477346951" alt=""></li>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div id="prev-btn" class="left carousel-control" href="#myCarousel" data-slide="prev"></div>
+            <div id="next-btn" class="right carousel-control" href="#myCarousel" data-slide="next"></div>
+        <ol id="nav-btns" class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="slide-nav-btn active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="slide-nav-btn"></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="slide-nav-btn"></li>
+            <li data-target="#myCarousel" data-slide-to="3" class="slide-nav-btn"></li>
+        </ol>
+            <ul class="carousel-inner" id="carousel-padding-fix">
+        <li class="item active"><img src="http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_site.jpg?itok=1Tcivg5y&timestamp=1477419942" alt=""></li>
+        <li class="item"><img src="http://www.joshgroban.com/sites/g/files/g2000006141/f/201704/JoshGroban_GreatComet_WebsiteBanner_2560x943_040417.jpg?itok=_ivPKahj&timestamp=1492184912" alt=""></li>
+        <li class="item"><img src="http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_GreatComet.jpg?itok=EKxmttMP&timestamp=1477346951" alt=""></li>
+        <li class="item"><img src="http://www.joshgroban.com/sites/g/files/g2000006141/f/201610/JG_Site2016_Headers_2560x943_fanclub.jpg?itok=FJvXzPbh&timestamp=1477346951" alt=""></li>
     </ul>
-            </div>
+        </div>
     </div>
     <div class="to-white">
     <div class="content-wrapper">
