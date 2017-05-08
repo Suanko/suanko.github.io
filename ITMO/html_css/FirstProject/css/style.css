@@ -235,12 +235,12 @@ body, p, h1, h2, ul {
     color: #fff;
 }
 #block-for-slider {
+    overflow: hidden;
 }
 #viewport {
     width: 100%;
     display: table;
     position: relative;
-    overflow: hidden;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
