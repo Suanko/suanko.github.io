@@ -237,6 +237,9 @@ body, p, h1, h2, ul {
 }
 #block-for-slider {
     overflow: hidden;
+    width: 100%;
+    height:auto;
+    position: relative;
 }
 #viewport {
     width: 100%;
@@ -266,6 +269,60 @@ body, p, h1, h2, ul {
     left: 0;
     margin: 0;
     padding: 0;
+}
+#prev-btn, #next-btn{
+    width: 58px;
+    height: 58px;
+    display: block;
+    top:calc(50% - 55px);
+    z-index: 999;
+}
+#next-btn {
+    background: url("../img/rightarrow.png");
+    position: absolute;
+    right:2%;
+    left: auto;
+}
+#prev-btn{
+    background: url("../img/leftarrow.png");
+    position: absolute;
+    left:2%;
+}
+#prev-btn:hover{
+    background: url("../img/leftarrowhover.png");
+    cursor: pointer;
+}
+#next-btn:hover{
+    background: url("../img/rightarrowhover.png");
+    cursor: pointer;
+}
+#nav-btns{
+    padding: 0;
+    list-style-type: none;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 3%;
+    left: calc(50% - 48px);
+    width: 96px;
+    height: 24px;
+    line-height: 24px;
+    text-align-last: justify;
+    z-index: 999;
+    cursor: default;
+    vertical-align: middle;
+    background-color: transparent;
+}
+.slide-nav-btn {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 40px;
+    background: rgba(239,239,239,0.5);
+    cursor: pointer;
+}
+.flex-active{
+    background: #B1B4B8 !important;
+    cursor: default;
 }
 img{
     max-width: 100%;
