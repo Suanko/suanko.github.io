@@ -245,9 +245,7 @@ body, p, h1, h2, ul {
 #carousel-padding-fix{
     padding: 0;
 }
-.item{
-    .transition: (6 ease-in-out left);
-}
+.item{}
 #prev-btn, #next-btn{
     width: 58px;
     height: 58px;
