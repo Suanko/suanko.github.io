@@ -33,6 +33,7 @@ body, p, h1, h2, ul {
     max-width:1203px;
     margin: 0 auto;
     text-align-last: justify;
+    cursor: default;
 }
 .player{
     list-style-type: none;
