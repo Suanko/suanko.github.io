@@ -254,12 +254,6 @@ body, p, h1, h2, ul {
     left: 0;
     margin: 0;
     padding: 0;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    -webkit-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
 }
 
 #slidewrapper ul, #slidewrapper li {
@@ -276,9 +270,6 @@ body, p, h1, h2, ul {
 img{
     max-width: 100%;
     height: auto;
-}
-.active{
-    display: block;
 }
 .row{
     margin: 0;
