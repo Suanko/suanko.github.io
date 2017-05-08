@@ -1002,7 +1002,7 @@ input:focus{
     font-size: 12px;
 }
 .to-black{
-    width: 1203px;
+    max-width: 1203px;
     height: 64px;
     color: white;
     background: #000;
