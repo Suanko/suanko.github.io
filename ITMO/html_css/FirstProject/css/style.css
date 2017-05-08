@@ -254,8 +254,9 @@ body, p, h1, h2, ul {
 #slidewrapper li {
     width: calc(100%/4);
     list-style: none;
-    display: inline;
+    display: inline-block;
     float: left;
+    cursor: pointer;
 }
 #slidewrapper {
     position: relative;
