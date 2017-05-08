@@ -247,6 +247,16 @@ body, p, h1, h2, ul {
     -o-user-select: none;
     user-select: none;
 }
+#slidewrapper ul, #slidewrapper li {
+    margin: 0;
+    padding: 0;
+}
+#slidewrapper li {
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+}
 #slidewrapper {
     position: relative;
     width: calc(100% * 4);
@@ -254,18 +264,6 @@ body, p, h1, h2, ul {
     left: 0;
     margin: 0;
     padding: 0;
-}
-
-#slidewrapper ul, #slidewrapper li {
-    margin: 0;
-    padding: 0;
-}
-
-#slidewrapper li {
-    width: calc(100%/4);
-    list-style: none;
-    display: inline;
-    float: left;
 }
 img{
     max-width: 100%;
