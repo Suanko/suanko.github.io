@@ -302,8 +302,11 @@ body, p, h1, h2, ul {
     cursor: pointer;
     border: none;
 }
+.carousel-indicators>li{
+    margin: 0;
+}
 .slide-nav-btn.active{
-    background: #B1B4B8 !important;
+    background: #B1B4B8;
     cursor: default;
 }
 img{
