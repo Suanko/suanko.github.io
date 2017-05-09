@@ -1288,6 +1288,9 @@ input:focus{
     }
 }
 @media screen and (max-width: 767px){
+    #prev-btn, #next-btn{
+        display: none;
+    }
     #nav-btns{
         left: calc(50% - 25px);
         bottom: 1%;
