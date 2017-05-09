@@ -1315,6 +1315,7 @@ input:focus{
         display: block;
         width: 100%;
         margin-bottom: 1.25em;
+        min-height: auto;
     }
     .instagram-logo, .news-logo, .video-logo, .shop-logo, .tweeter-logo{
         font-size: 30px;
@@ -1406,10 +1407,26 @@ input:focus{
     .mobile-br{
         display: block;
     }
+    .footer-area-fix{
+        height: auto;
+    }
+    .copy-icons{
+        margin: 36px 0 23px;
+    }
+    .news-goto{
+        font-size: 26px;
+    }
+
 }
 @media screen and (max-width: 433px){
     .spotify-embed{
         right: calc(50% - 46px);
-        top: 32px;
+        top: 35px;
+    }
+}
+@media screen and (max-width: 327px){
+    .spotify-embed{
+        right: calc(25% - 46px);
+        top: 35px;
     }
 }
