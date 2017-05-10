@@ -32,6 +32,9 @@ body, p, h1, h2, ul {
     display: none;
     position: relative;
 }
+.pre-header a{
+    text-decoration: none;
+}
 .pre-header-logo{
     font-size: 33px;
     color: #172838;
@@ -53,7 +56,7 @@ body, p, h1, h2, ul {
     width: 30px;
     height: 30px;
     right: 1.5%;
-    top:calc(50% - 15px)
+    top:calc(50% - 15px);
 }
 .nav-toggle>span{
     border-bottom: solid 3px #172838;
@@ -64,6 +67,22 @@ body, p, h1, h2, ul {
     left: 5px;
     opacity: 1;
     top:13px;
+}
+.nav-toggle-open{
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    right: 1.5%;
+    top:calc(50% - 15px);
+    margin: 0;
+}
+#nav-toggle-enable, #sub-nav-toggle-enable{
+    display: none;
+}
+#nav-toggle-enable:checked ~ .nav-toggle-menu{
+    display: block;
 }
 .nav-toggle>span:first-child{
     top:5px;
@@ -80,9 +99,79 @@ body, p, h1, h2, ul {
     max-width: 100% !important;
     z-index: 9999;
     background: #fff;
+    list-style-type: none;
+    padding: 0;
 }
-.nav-toggle-menu{
-
+.nav-toggle-menu>li{
+    border-bottom: solid 2px #ccc;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.nav-toggle-menu>li a{
+    padding: 11px 0 10px;
+    display: block;
+    color: #000;
+}
+.nav-toggle-menu>li a{
+    text-decoration: none;
+}
+.dropdown-menu-toggle>li a{
+    text-decoration: none;
+}
+.nav-toggle-menu>li a:hover{
+    text-decoration: none;
+    color: #53adc7;
+}
+.nav-toggle-menu>li:first-child a{
+    background: #5bc0de;
+    color: #fff;
+}
+.dropdown-menu-toggle{
+    padding: 0;
+    display: none;
+    list-style-type: none;
+}
+.dropdown-menu-toggle>li {
+    display: block;
+    border-bottom: solid 2px #ccc;
+}
+.dropdown-menu-toggle>li:last-child{
+    border: none;
+}
+.dropdown-menu-toggle>li a{
+    color: #fff;
+    background: #53adc7;
+}
+.dropdown-menu-toggle>li a:hover{
+    text-decoration: none;
+    color: #172838;
+}
+.dropdown-toggle{
+    position: relative;
+}
+.dropdown-toggle a{
+    position: relative;
+    display: block;
+}
+.dropdown-toggle a>span{
+    font-size: 22px;
+    position: absolute;
+    right: 3%;
+    top: calc(50% - 12px);
+}
+.sub-nav-toggle-open{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    margin: 0;
+}
+#sub-nav-toggle-enable:checked ~ .dropdown-menu-toggle{
+    display: block;
 }
 .header-full-width{
     background: #000;
@@ -1419,7 +1508,6 @@ input:focus{
     .news-goto{
         font-size: 26px;
     }
-
 }
 @media screen and (max-width: 433px){
     .spotify-embed{
