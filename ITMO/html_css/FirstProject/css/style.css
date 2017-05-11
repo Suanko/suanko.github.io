@@ -155,20 +155,25 @@ body, p, h1, h2, ul {
     position: relative;
     display: block;
 }
-.dropdown-toggle a>span{
+.dropdown-toggle>span{
     font-size: 22px;
     position: absolute;
-    right: 3%;
-    top: calc(50% - 12px);
+    right: 2%;
+    top: 5px;
+    height: 30px;
+    width: 30px;
 }
 .sub-nav-toggle-open{
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    right: 2%;
+    top: 5px;
+    height: 30px;
+    width: 50px;
     cursor: pointer;
     margin: 0;
+}
+.sub-nav-toggle-open:hover ~ .dropdown-toggle>a{
+    color:#53adc7;
 }
 #sub-nav-toggle-enable:checked ~ .dropdown-menu-toggle{
     display: block;
