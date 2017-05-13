@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2</title>
+</head>
+<body>
+<script>
+    var a=prompt('введите число');
+    if(a>999 || a<-999){
+        alert('достаточно.')
+    }
+    else if (a<0){
+        if (a==-273) {
+            alert('абсолютный ноль');
+        }
+                else if(a<-10) {
+            alert('отрицательное двузначное число');
+        }
+        else if(a<-100) {
+            alert('отрицательное трехзначное число');
+        }
+        else {
+            alert('отрицательное однозначное число');
+        }
+    }
+    else if (a>0) {
+        if (a==858) {
+            alert('С добрым утром');
+        }
+        else if(a>10) {
+            alert('положительное двузначное число');
+        }
+        else if(a>100) {
+            alert('положительное трехзначное число');
+        }
+        else {
+            alert('положительное однозначное число');
+        }
+    }
+    else{
+        alert('нулевое число');
+    }
+</script>
+</body>
+</html>
