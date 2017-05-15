@@ -6,12 +6,24 @@
 </head>
 <body>
 <script>
-    var a=1, b=prompt('число умножения'), c=prompt('на сколько умножаем'), sum;
-    while(a<=c){
-        sum=b*a;
-        a++
+    var a=1, b, i=1, sum, table='<table style="background: green; text-align: center"><tr style="">';
+    while(i<=10){
+    table +='<td style="border: none">'+ i++ +'</td>';
     }
-    document.write(sum);
+    table += '</tr>';
+    while(a<=9){
+        a++;
+        table += '<tr style="background: yellow;">';
+        b=1;
+        while (b<=10){
+            sum=a*b;
+            table +='<td>'+ sum +'</td>';
+            b++;
+        }
+        table += '</tr>';
+    }
+    document.write(table);
+    table += '</table>';
 </script>
 </body>
 </html>
