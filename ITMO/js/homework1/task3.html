@@ -6,18 +6,19 @@
 </head>
 <body>
 <script>
-    var a,b;
+    var a,b,c;
     a=prompt('Введите число X');
     b=prompt('Введите число Y');
     if(a>b){
-    a=b;
+        c=b;
+        b=a;
+        a=c;
         document.write('X='+a);
-    }
-    if(b>a){
         document.write('Y='+b);
     }
     else{
-        alert('wat?')
+        document.write('X='+a);
+        document.write('Y='+b);
     }
 </script>
 </body>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zebra</title>
+</head>
+<body>
+<script>
+    var  a = 1, strHTML = "<table><caption>Зебра</caption></tr>";
+    while(a<=8){
+    if (a % 2) {
+    strHTML +='<tr style = "background:red;">';
+    }
+    else {
+        strHTML +='<tr style = "background:green;">';
+    }
+        strHTML+="<th>" + a + "</th><th>" + a*2 + "</th></tr>";
+        a++;
+    }
+    strHTML+="</table>";
+    document.write(strHTML);
+</script>
+</body>
+</html>

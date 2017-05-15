@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<script>
+    var sum = prompt('оклад?'), day = prompt('сколько дней в месяце?'), work = prompt('Отработано дней?');
+    var myMoney = (sum*work)/day;
+    var result = (myMoney)*0.13;
+    var summar = myMoney - result;
+    alert(summar.toFixed(2) + 'руб.');
+</script>
+</body>
+</html>
