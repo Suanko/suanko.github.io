@@ -9,13 +9,16 @@
     var X1, Y1, X2, Y2, X3, Y3, a, b, c;
     X1=parseInt(prompt("Введите координату X для точки A","-1"));
     Y1=parseInt(prompt("Введите координату Y для точки A","3"));
+    Z1=parseInt(prompt("Введите координату Z для точки A","3"));
     X2=parseInt(prompt("Введите координату X для точки B","2"));
     Y2=parseInt(prompt("Введите координату Y для точки B","4"));
+    Z2=parseInt(prompt("Введите координату Y для точки B","6"));
     X3=parseInt(prompt("Введите координату X для точки C","5"));
     Y3=parseInt(prompt("Введите координату Y для точки C","-7"));
-    a = Math.sqrt((Math.pow((X2-X1),2))+(Math.pow((Y2-Y1),2)));
-    b = Math.sqrt((Math.pow((X3-X2),2))+(Math.pow((Y3-Y2),2)));
-    c = Math.sqrt((Math.pow((X1-X3),2))+(Math.pow((Y1-Y3),2)));
+    Z3=parseInt(prompt("Введите координату Y для точки C","3"));
+    a = Math.sqrt((Math.pow((X2-X1),2))+(Math.pow((Y2-Y1),2))+(Math.pow((Z2-Z1),2)));
+    b = Math.sqrt((Math.pow((X3-X2),2))+(Math.pow((Y3-Y2),2))+(Math.pow((Z3-Z2),2)));
+    c = Math.sqrt((Math.pow((X1-X3),2))+(Math.pow((Y1-Y3),2))+(Math.pow((Z1-Z3),2)));
     if ( a*a == b*b + c*c || b*b == c*c + a*a || c*c == a*a + b*b ){
         alert('Прямоугольный треугольник');
     }
