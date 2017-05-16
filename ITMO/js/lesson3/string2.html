@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>string2</title>
+</head>
+<body>
+<script>
+    var str = prompt('');
+    var regExp = /[^а-я]{1,12}@\w{2,5}\.\w{2,3}/;
+    if(regExp.test(str)){
+        alert('OK!');
+    }
+    else {
+        alert('NOPE');
+    }
+</script>
+</body>
+</html>

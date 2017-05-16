@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bitkey</title>
+</head>
+<body>
+<script>
+    var str=prompt('Введите слово'), key=prompt('Введите ключ'), i=0, newStr='';
+    while(i < str.length){
+        var tempCode = str.charCodeAt(i)^key.charCodeAt(0);
+        newStr += String.fromCharCode(tempCode);
+        i++;
+    }
+    console.log(newStr);
+</script>
+</body>
+</html>
