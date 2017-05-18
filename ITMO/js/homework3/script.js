@@ -26,7 +26,7 @@ function pwdCheck() {
     if (str.length >= 9 || str.length <= 24) {
         if (/[a-z]/i.test(str)) {
             if(/[A-Z]/.test(str)){
-            if (/[0-9]{2}/.test(str)) {
+            if (/[0-9]/.test(str) && str.match(/[0-9]/g).length==2) {
                 if (/[!#$%]{1}/.test(str)) {
                     alert('Пароль подходит!');
                 }
