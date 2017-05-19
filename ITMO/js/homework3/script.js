@@ -5,7 +5,7 @@
 function toSum() {
     var str=prompt('Введите число'), i=0, sum=0;
     while (i < str.length) {
-        sum += parseInt(str[i]);
+            sum += parseInt(str[i]);
         i++;
     }
     console.log(sum);
