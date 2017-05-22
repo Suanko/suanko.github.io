@@ -11,7 +11,10 @@ function crossNull() {
     var area = [ null, 1, null, 0, null, 0, null, 1, null ], table='';
     table += '<table style="background: yellow; border: solid 1px green">';
         for (var j=0; j<area.length;j++) {
-            if (j == 0 || j % 3 == 0){
+            if (j == 0){
+                table += '<tr>';
+            }
+            if (j % 3 == 0 && j !=0){
                 table += '</tr>';
                 table += '<tr>';
             }
