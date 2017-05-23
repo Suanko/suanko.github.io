@@ -5,14 +5,27 @@ student={
     Имя:'Стас',
     Фамилия:'Котов',
     Возраст:17,
-    Интересы:'маджонг',
+    Интересы:{хобби:'маджонг', спорт:'плавание'},
     Институт:'Политех'
 };
-function objectStudent () {
-    for (var key in student){
-        alert(key+': ' + student[key]);
+var objPrint = function(object, level = 0) {
+    var result = '';
+    if (typeof object === 'object') {
+        for (var key in object) {
+            if (typeof object[key] === 'object') {
+                result += `${Array(level+1).join('\t')}${key}:\n`;
+                result += objPrint(object[key], level + 1);
+            } else {
+                result += `${Array(level+1).join('\t')}${key}: ${object[key]}\n`;
+            }
+        }
+        return result;
+    } else {
+
+        console.log('Не объект.');
+
     }
-}
+};
 function arrayBonding() {
     var a = [1,2,4,5], b = [2,3,5,7], c, flag=true, array=[];
     c=a.concat(b);
@@ -31,8 +44,8 @@ function arrayBonding() {
     }
     alert(array);
 }
-function arrayFibonachu() {
-    var n = parseInt(prompt('',8));
+var n = parseInt(prompt('',8));
+function arrayFibonachu(n) {
     var fibonachu = [0, 1];
 
     for (i = 2; i < n; i ++) {
@@ -41,7 +54,7 @@ function arrayFibonachu() {
     alert(fibonachu.slice(0,n));
 }
 var day = prompt('Количество дней');
-function toDay() {
+function toDay(day) {
     var array =[];
     for (var i = 0, len = day.length; i<len; i++) {
         array.push(+day.charAt(i));

@@ -44,9 +44,7 @@ var objPrint = function(object, level = 0) {
                 result += `${Array(level+1).join('\t')}${key}: ${object[key]}\n`
             };
         };
-
         return result;
-
     } else {
 
         console.log('Не объект.');
