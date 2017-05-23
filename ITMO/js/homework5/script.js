@@ -40,6 +40,53 @@ function arrayFibonachu() {
     }
     alert(fibonachu.slice(0,n));
 }
+var day = prompt('Количество дней');
 function toDay() {
-alert('пока не сделал, подумаю ещё...')
+    var array =[];
+    for (var i = 0, len = day.length; i<len; i++) {
+        array.push(+day.charAt(i));
+    }
+    if(len==3){
+        if(array[1]==1){
+            alert(day + ' дней');
+        }
+        else {
+            if (array[2] == 1 || array[3] == 1) {
+                alert(day + ' день');
+            }
+            if (array[2] < 5 && array[2] != 0 && array[2] != 1) {
+                alert(day + ' дня');
+            }
+            if (array[2] > 4 || array[2] == 0) {
+                alert(day + ' дней');
+            }
+        }
+    }
+    if(len==2){
+        if(array[0]==1){
+            alert(day + ' дней');
+        }
+        else {
+            if (array[1] == 1 || array[2] == 1) {
+                alert(day + ' день');
+            }
+            if (array[1] < 5 && array[1] != 0 && array[1] != 1) {
+                alert(day + ' дня');
+            }
+            if (array[1] > 4 || array[1] == 0) {
+                alert(day + ' дней');
+            }
+        }
+    }
+    if(len==1){
+        if(array[0]==1){
+            alert(day+' день');
+        }
+        if(array[0]>4 || array[0]==0){
+            alert(day+' дней');
+        }
+        if(array[0]<5){
+            alert(day+' дня');
+        }
+    }
 }
