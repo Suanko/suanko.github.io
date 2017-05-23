@@ -14,7 +14,7 @@ function crossNull() {
             if (j == 0){
                 table += '<tr>';
             }
-            if (j % 3 == 0 && j !=0){
+            if (j % 3 == 0 && j !=0 && j !=9){
                 table += '</tr>';
                 table += '<tr>';
             }
@@ -28,6 +28,7 @@ function crossNull() {
                 table += '<td style="height: 15px; width: 15px; text-align: center;">'+' '+'</td>';
             }
         }
+    table += '</tr>';
     table += '</table>';
     document.write(table);
 }
