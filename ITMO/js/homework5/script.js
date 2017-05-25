@@ -5,23 +5,22 @@ student={
     Имя:'Стас',
     Фамилия:'Котов',
     Возраст:17,
-    Интересы:{хобби:'маджонг', спорт:'плавание'},
+    Интересы:[хобби='маджонг', спорт='плавание'],
     Институт:'Политех'
 };
 var objPrint = function(object, level = 0) {
     var result = '';
     if (typeof object === 'object') {
         for (var key in object) {
-            if (typeof object[key] === 'object') {
+            if (typeof object[key] === 'Array') {
                 result += `${Array(level+1).join('\t')}${key}:\n`;
                 result += objPrint(object[key], level + 1);
             } else {
                 result += `${Array(level+1).join('\t')}${key}: ${object[key]}\n`;
             }
         }
-        return result;
+        console.log(result);
     } else {
-
         console.log('Не объект.');
 
     }
