@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calc</title>
+    <style>
+        input{
+            height: 25px;
+            width: 206px;
+            border: none;
+            box-shadow: inset 0px 1px 2px;
+        }
+        td{
+            height:45px;
+            width: 45px;
+            text-align: center;
+            border: solid 1px black;
+            background: #ccc;
+        }
+        td:hover{
+            background: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<table id="calc-table">
+    <tbody><input id="screen" type="text" disabled>
+    <tr>
+        <td colspan="4">C</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>/</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>*</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>.</td>
+        <td>=</td>
+        <td>+</td>
+    </tr>
+    </tbody>
+</table>
+<script>
+    var table = document.getElementsByTagName('table')[0];
+table.addEventListener('click', function (e) {
+    if(e.target.tagName === 'TD'){
+        var content = e.target.innerText;
+        var input = document.getElementsByTagName('input')[0];
+        if(content === '='){
+            var result = eval(input.value);
+            input.value = result;
+        }
+        else if(content === 'C'){
+            input.value = '';
+        }
+        else {
+            input.value += content;
+        }
+    }
+    else {
+        input.value += content;
+    }
+}, false)
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kubic</title>
+</head>
+<body>
+<div id="area" style="position: relative; height: 600px; width: 600px; background-color: #cecece;">
+    <div id="cubic" style="height: 90px;width: 90px;background-color: red; position: absolute; left:0;top:0;"></div>
+</div>
+<script>
+    document.addEventListener('keydown', function (e) {
+        if(e.keyCode === 37){
+            cubic.style.left = (parseInt(cubic.style.left)-5)+'px';
+        }
+        if(e.keyCode === 39){
+            cubic.style.left = (parseInt(cubic.style.left)+5)+'px';
+        }
+        if(e.keyCode === 40){
+            cubic.style.top = (parseInt(cubic.style.top)+5)+'px';
+        }
+        if(e.keyCode === 38){
+            cubic.style.top = (parseInt(cubic.style.top)-5)+'px';
+        }
+    })
+</script>
+</body>
+</html>

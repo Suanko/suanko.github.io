@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chat</title>
+</head>
+<body>
+<input type="text" id="chat"><button id="button">Send</button>
+<ul id="chatLog"></ul>
+<script>
+    button.addEventListener('click', function () {
+        var content = chat.value;
+        if(content !== '') {
+            var ulLi = document.createElement('li');
+            ulLi.innerText = content;
+            chatLog.append(ulLi);
+            chat.value = '';
+        }
+    })
+</script>
+</body>
+</html>
