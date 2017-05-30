@@ -10,12 +10,12 @@ student={
 };
 var objPrint = function(object, level) {
     var result = '';
-    if (typeof object === 'object') {
+    if (typeof this === 'object') {
         for (var key in object) {
-            if (typeof object[key] === 'object') {
+            if (typeof this[key] === 'object') {
                 result += 'Интересы:' + object[key] +'.';
             } else {
-                if(object[key] == object.Имя){
+                if(this[key] == this.Имя){
                     result += object[key] +' ';
                 }
                 else {
@@ -36,21 +36,14 @@ function factorial(n) {
         return 1;
     }
 }
-function randomHundred() {
-    var randomValue=[], result=[];
-    randomNumber();
-    function randomNumber () {
-        for (var i = 1; i <= 100; i++) {
-            randomValue.push(Math.round(Math.random() * i));
-        }
+function randomHundred(max, min) {
+    var randomValue = [], toHundred=[], result = [];
+    for (var q=0; q<100;q++){
+        toHundred.push(q+1);
     }
-    nextInput:
-    for (var e = 0; e < randomValue.length; e++) {
-        var check = randomValue[e];
-        for (var j = 0; j < result.length; j++) {
-            if (result[j] == check) continue nextInput;
-        }
-        result.push(check);
+    function compareRandom(a, b) {
+        return Math.random() - 0.5;
     }
-    alert(result);
+    toHundred.sort(compareRandom);
+    alert(toHundred);
 }
