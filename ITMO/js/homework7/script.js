@@ -2,8 +2,8 @@
  * Created by Cecil on 30.05.2017.
  */
 //task3 Mylib
-;(function () {
-    var searchMin = function (array) {
+var myLib = (function () {
+        searchMin = function () {
         var i = array.length, min = array[0], index = 0;
         while (i--) {
             if (array[i] < min) {
@@ -13,27 +13,27 @@
         }
         alert("array[" + index + "] = " + min);
     };
-    var searchMax = function (array) {
+    searchMax = function () {
         var i = array.length, max = array[-1], index = 0;
         while (i++) {
-            if (array[i] > max) {
+            if (array[i] < max) {
                 max = array[i];
                 index = i;
             }
         }
         alert("array[" + index + "] = " + max);
     }
-    var arrayMid = function (array) {
-        var sum, result;
+    arrayMid = function () {
+        var sum = 0, result;
         for (var i=0; i<array.length;i++){
             sum += array[i];
         }
         result = sum/array.length;
         return result;
     }    
-    var arrayClone = function (array) {
+    arrayClone = function () {
         return array.slice(0);
-    }    
+    }
     }
 )();
 //task4

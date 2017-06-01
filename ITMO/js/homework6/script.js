@@ -38,8 +38,12 @@ function factorial(n) {
 }
 function randomHundred(max, min) {
     var randomValue = [], toHundred=[], result = [];
-    for (var q=0; q<100;q++){
-        toHundred.push(q+1);
+    arrayComplete();
+    function arrayComplete() {
+        for (var q=0; q<100;q++){
+            toHundred.push(q+1);
+        }
+        return toHundred;
     }
     function compareRandom(a, b) {
         return Math.random() - 0.5;

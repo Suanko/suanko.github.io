@@ -28,7 +28,7 @@ function takeE(x) {
 describe('task_01 calc_sum_numbers_from_string',function () {
     var input_str ='если корень из 5', msg='там sqrt чото делает:' + input_str + 'результат будет 2';
     it(msg, function () {
-        var rez = takeE(prompt(''));
+        var rez = takeE(5);
         expect(rez).toBe(2);
     })
 })
