@@ -3,7 +3,7 @@
  */
 //task3 Mylib
 var myLib = (function () {
-        searchMin = function () {
+       var searchMin = function () {
         var i = array.length, min = array[0], index = 0;
         while (i--) {
             if (array[i] < min) {
@@ -13,7 +13,7 @@ var myLib = (function () {
         }
         alert("array[" + index + "] = " + min);
     };
-    searchMax = function () {
+    var searchMax = function () {
         var i = array.length, max = array[-1], index = 0;
         while (i++) {
             if (array[i] < max) {
@@ -23,7 +23,7 @@ var myLib = (function () {
         }
         alert("array[" + index + "] = " + max);
     }
-    arrayMid = function () {
+    var arrayMid = function () {
         var sum = 0, result;
         for (var i=0; i<array.length;i++){
             sum += array[i];
@@ -31,7 +31,7 @@ var myLib = (function () {
         result = sum/array.length;
         return result;
     }    
-    arrayClone = function () {
+    var arrayClone = function () {
         return array.slice(0);
     }
     }
