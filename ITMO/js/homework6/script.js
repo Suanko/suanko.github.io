@@ -37,17 +37,16 @@ function factorial(n) {
     }
 }
 function randomHundred(max, min) {
-    var randomValue = [], toHundred=[], result = [];
-    arrayComplete();
-    function arrayComplete() {
-        for (var q=0; q<100;q++){
-            toHundred.push(q+1);
-        }
-        return toHundred;
-    }
+    var result = [];
     function compareRandom(a, b) {
         return Math.random() - 0.5;
     }
-    toHundred.sort(compareRandom);
-    alert(toHundred);
+    
+    return function () {
+        for (var i=0; i<100;i++){
+            result.push(i+1);
+        }
+        result.sort(compareRandom);
+        return result;
+    };
 }

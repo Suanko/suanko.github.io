@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tst</title>
+    <script src="script.js"></script>
+</head>
+<body style="margin: 0">
+<div id="box" style="height: 662px; width: 100%;"></div>
+<script>
+integerIterator();
+    function User(str) {
+        if(str !== undefined && typeof str === 'string'){
+            this.name = str;
+        }
+        else {
+            this.name = 'Аноним';
+        }
+        this.toString = function () {
+            return'Имя пользователя:' + this.name;
+        }
+    }
+    var user1 = new User();
+    var user2 = new User('Sasha');
+    console.log(user1+'');
+    console.log(user2+'');
+</script>
+</body>
+</html>
