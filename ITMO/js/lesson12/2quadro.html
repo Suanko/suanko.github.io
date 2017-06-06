@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2quadro</title>
+</head>
+<body>
+<div id="area" style="position: relative; height: 400px; width: 400px; background-color: #cecece;">
+    <div id="cubic" style="height: 30px;width: 30px; background-color: red; position: absolute; left:0;top:0; z-index: 999"></div>
+    <div id="cubic2" style="position: absolute; left: 180px; top: 270px; height: 30px; width: 30px; background: green;"></div>
+</div>
+<script>
+    var cubic = document.getElementById('cubic');
+    var cubic2 = document.getElementById('cubic2');
+    document.addEventListener('keydown', function (e) {
+        if(e.keyCode === 37){
+            cubic.style.left = (parseInt(cubic.style.left)-10)+'px';
+            if(isInterSect(cubic, cubic2)){
+                cubic.style.backgroundColor = 'green';
+            }
+            else {
+                cubic.style.backgroundColor = 'red';
+            }
+        }
+        if(e.keyCode === 39){
+            cubic.style.left = (parseInt(cubic.style.left)+10)+'px';
+            if(isInterSect(cubic, cubic2)){
+                cubic.style.backgroundColor = 'green';
+            }
+            else {
+                cubic.style.backgroundColor = 'red';
+            }
+        }
+        if(e.keyCode === 40){
+            cubic.style.top = (parseInt(cubic.style.top)+10)+'px';
+            if(isInterSect(cubic, cubic2)){
+                cubic.style.backgroundColor = 'green';
+            }
+            else {
+                cubic.style.backgroundColor = 'red';
+            }
+        }
+        if(e.keyCode === 38){
+            cubic.style.top = (parseInt(cubic.style.top)-10)+'px';
+            if(isInterSect(cubic, cubic2)){
+                cubic.style.backgroundColor = 'green';
+            }
+            else {
+                cubic.style.backgroundColor = 'red';
+            }
+        }
+    });
+    function isInterSect(rect1,rect2){
+        var x1_L = parseInt(rect1.style.left), x1_R = x1_L + parseInt(rect1.style.width);
+        var x2_L =  parseInt(rect2.style.left), x2_R = x2_L + parseInt(rect2.style.width);
+        var flagX = (x1_L <= x2_L && x2_L <= x1_R) || (x2_L <= x1_R && x1_R <= x2_R);
+        var y1_L = parseInt(rect1.style.top), y1_R = y1_L + parseInt(rect1.style.height);
+        var y2_L =  parseInt(rect2.style.left), y2_R = y2_L + parseInt(rect2.style.height);
+        var flagY = (y1_L <= y2_L && y2_L <= y1_R) || (y1_L <= y2_R && y2_R <= y1_R);
+        return flagX && flagY;
+    }
+</script>
+</body>
+</html>

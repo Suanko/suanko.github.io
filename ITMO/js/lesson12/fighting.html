@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fighting</title>
+</head>
+<body>
+<script>
+    function fighter(name, a_min, a_max, def, hp) {
+        this.name = name;
+        this.a_min = a_min;
+        this.a_max = a_max;
+        this.def = def;
+        this.hp = hp;
+
+        fighter.prototype.attack = function () {
+            return Math.round(Math.random()*(this.a_max - this.a_min) + this.a_min);
+        }
+        fighter.prototype.defence = function (att) {
+            var damage = att - this.def;
+            if(damage > 0){
+                this.hp -= damage;
+            }
+        }
+    }
+    function fighterManager() {
+        this.player1 = new fighter('Rokki', 10, 20, 8, 100);
+        this.player2 = new fighter('Drago', 10, 20, 8, 100);
+
+        fighterManager.prototype.fight = function () {
+            this.player1.defence(this.player2.attack());
+            if(this.player1.hp<=0){
+                console.log('Win ' + this.player2.name);
+                return;
+            }
+            this.player2.defence(this.player1.attack());
+            if(this.player2.hp<=0){
+                console.log('Win ' + this.player1.name);
+                return;
+            }
+            console.log(this.player1.name + ' hp:' + this.player1.hp);
+            console.log(this.player2.name + ' hp:' + this.player2.hp);
+            var that = this;
+            setTimeout(function () {
+                that.fight();
+            }, 1000);
+        }
+    }
+    var fM = new fighterManager();
+    fM.fight();
+</script>
+</body>
+</html>
