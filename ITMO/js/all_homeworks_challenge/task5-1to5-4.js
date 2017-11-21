@@ -29,7 +29,7 @@ function arrayAdd(a,b) {
             }
             l++;
         }
-    alert(c);
+    return c;
 }
 function fibonachu(n) {
     var a=1, b=1;
